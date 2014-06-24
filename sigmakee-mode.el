@@ -1,7 +1,10 @@
+(setq load-path
+ (cons "/var/lib/myfrdcsa/codebases/minor/sigmakee-mode" load-path))
+
 (add-to-list 'auto-mode-alist '("\\.kif\\'" . sigmakee-mode))
 
-(load "/var/lib/myfrdcsa/codebases/minor/sigmakee-mode/sigmakee-terms.el")
-(load "/var/lib/myfrdcsa/codebases/minor/sigmakee-mode/sigmakee-fontify.el")
+(require 'sigmakee-terms)
+(require 'sigmakee-fontify)
 
 (define-derived-mode sigmakee-mode
  emacs-lisp-mode "SigmaKEE"
@@ -72,3 +75,5 @@ considered."
 
      (string-match regex expansion)
      (insert (match-string 1 expansion)))))))
+
+(provide 'sigmakee-mode)

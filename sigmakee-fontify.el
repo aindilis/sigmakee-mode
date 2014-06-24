@@ -6,11 +6,18 @@
 
 ;;; GNU requires that the face vars be defined and point to themselves
 
+(defvar sigmakee-main-keyword-face 'sigmakee-main-keyword-face
+  "Face to use for SigmaKEE relations.")
+(defface sigmakee-main-keyword-face
+  '((((class color)) (:foreground "red" :bold t)))
+  "Font Lock mode face used to highlight class refs."
+  :group 'sigmakee-faces)
+
 (defvar sigmakee-function-nri-and-class-face 'sigmakee-function-nri-and-class-face
   "Face to use for SigmaKEE keywords.")
 (defface sigmakee-function-nri-and-class-face
     (if in-xemacs-p 
-	'((((class color)) (:foreground "red"  :bold t))
+	'((((class color)) (:foreground "red"))
 	  (t (:foreground "gray" :bold t)))
       ;; in GNU, no bold, so just use color
       '((((class color))(:foreground "red"))))
@@ -37,10 +44,17 @@
   "Font Lock mode face used to highlight class names in class definitions."
   :group 'sigmakee-faces)
 
+(defvar sigmakee-main-relation-face 'sigmakee-main-relation-face
+  "Face to use for SigmaKEE relations.")
+(defface sigmakee-main-relation-face
+  '((((class color)) (:foreground "black" :bold t)))
+  "Font Lock mode face used to highlight class refs."
+  :group 'sigmakee-faces)
+
 (defvar sigmakee-relation-face 'sigmakee-relation-face
   "Face to use for SigmaKEE relations.")
 (defface sigmakee-relation-face
-  '((((class color)) (:foreground "black" :bold t)))
+  '((((class color)) (:foreground "darkgrey")))
   "Font Lock mode face used to highlight class refs."
   :group 'sigmakee-faces)
 
@@ -97,12 +111,10 @@
 ;;;================================================================
 ;;; these are the regexp matches for highlighting SigmaKEE 
 
-
-
 (defvar sigmakee-font-lock-keywords
   (let ()
     (list 
-     (list 
+(list 
       (concat "^\s*[^;][^\n\r]*\\b\\(" (join "\\|" sigmakee-mode-functions-non-relational-instances-and-classes) "\\)\\b"
 	      )
       '(1 sigmakee-function-nri-and-class-face t)
@@ -111,6 +123,16 @@
       (concat "^\s*[^;][^\n\r]*\\b\\([a-zA-Z0-9-_]+Fn\\)\\b"
        )
       '(1 sigmakee-function-nri-and-class-face t)
+      )
+     (list 
+      (concat "\\(\\?[A-Z0-9]+\\)\\b"
+	      )
+      '(1 sigmakee-variable-face t)
+      )
+     (list 
+      (concat "\\(\\&\\%[A-Za-z0-9-_]+\\)\\b"
+	      )
+      '(1 sigmakee-other-face t)
       )
      (list 
       (concat "^\s*[^;][^\n\r]*\\b\\(" (join "\\|" sigmakee-mode-relations) "\\)\\b"
@@ -128,16 +150,16 @@
       '(1 sigmakee-logical-operator-face t)
       )
      (list 
-      (concat "\\(\\?[A-Z0-9]+\\)\\b"
+      (concat "^\s*[^;][^\n\r]*\\b\\(" (join "\\|" sigmakee-mode-main-keyword ) "\\)\\b"
 	      )
-      '(1 sigmakee-variable-face t)
+      '(1 sigmakee-main-keyword-face t)
       )
      (list 
-      (concat "\\(\\&\\%[A-Za-z0-9-_]+\\)\\b"
+      (concat "^\s*[^;][^\n\r]*\\b\\(" (join "\\|" sigmakee-mode-main-relation ) "\\)\\b"
 	      )
-      '(1 sigmakee-other-face t)
+      '(1 sigmakee-main-relation-face t)
       )
-
+     
      ;; black for the def parts of PROPERTY DEFINITION
      ;; and of TransitiveProperty UnambiguousProperty UniqueProperty
 ;;; END OF LIST ELTS
@@ -150,3 +172,5 @@
 (put 'sigmakee-mode 'font-lock-defaults '(sigmakee-font-lock-keywords nil nil))
 
 (defun re-font-lock () (interactive) (font-lock-mode 0) (font-lock-mode 1))
+
+(provide 'sigmakee-fontify)

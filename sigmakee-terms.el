@@ -3,6 +3,21 @@
 ;; functions, non-relational instances and classes are written with
 ;; initial capital letters.
 
+(defvar sigmakee-mode-main-relation
+ (list
+  "instance"
+  "subclass"
+  "domain"
+  "domainSubclass"
+  ))
+
+(defvar sigmakee-mode-main-keyword
+ (list
+  "Entity"
+  "Object"
+  "Process"
+  "Abstract"))
+
 (defvar sigmakee-mode-functions-non-relational-instances-and-classes
  (list
   "AbnormalAnatomicalStructure"
@@ -1180,5 +1195,9 @@
   ))
 
 (defvar sigmakee-mode-all-terms
- (append sigmakee-mode-functions-non-relational-instances-and-classes sigmakee-mode-relations 
+ (append sigmakee-mode-main-keyword sigmakee-mode-main-relation
+  sigmakee-mode-functions-non-relational-instances-and-classes
+  sigmakee-mode-relations
   (list "-1" "<=>" "=>")))
+
+(provide 'sigmakee-terms)
