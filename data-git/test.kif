@@ -1,0 +1,2000 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.daml.org/tools/tools-ont#">
+  <Project rdf:ID="DAML">
+    <name>DAML</name>
+  </Project>
+  <Tool xmlns="" rdf:ID="RDF_API">
+    <name>RDF API</name>
+    <description>Java RDF parser, from Stanford.  This is merging with SiRPAC.</description>
+    <site>http://www-db.stanford.edu/~melnik/rdf/api.html</site>
+    <interface>java_api</interface>
+    <category>RDF Parser</category>
+    <project rdf:resource="#DAML"/>
+  </Tool>
+  <Tool xmlns="" rdf:ID="SiRPAC">
+    <name>Simple RDF Parser And Compiler (SiRPAC)</name>
+    <description>RDF parser, from W3C</description>
+    <site>http://www.w3.org/RDF/Implementations/SiRPAC/</site>
+    <sourceCode>open</sourceCode>
+    <interface>java_api</interface>
+    <interface>www</interface>
+    <category>RDF Parser</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="DAML_Mozilla_sidebar">
+    <name>DAML Mozilla sidebar</name>
+    <description>plugin to show DAML content found in HTML pages</description>
+    <interface>gui</interface>
+    <category>DAML Browser</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="Mozilla">
+    <name>Mozilla</name>
+    <description>WWW browser</description>
+    <site>http://www.mozilla.org</site>
+    <sourceCode>open</sourceCode>
+    <interface>gui</interface>
+    <category>WWW browser</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="Ontolingua">
+    <name>Ontolingua</name>
+    <description>Ontology library and server, which supports a WWW interface and translation into various formats.</description>
+    <site>http://ontolingua.stanford.edu</site>
+    <interface>www</interface>
+    <category>Ontology Editor</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="HTMLParser">
+    <name>javax.swing.text.HTMLParser</name>
+    <description>HTML parser, built into JDK</description>
+    <site>http://java.sun.com</site>
+    <interface>java_api</interface>
+  </Tool>
+  <Tool xmlns="" rdf:ID="JAXP">
+    <name>Java API for XML Parsing (JAXP)</name>
+    <description>XML parser, from Sun</description>
+    <site>http://java.sun.com/xml/</site>
+    <interface>java_api</interface>
+    <category>XML Parser</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="Apache">
+    <name>Apache</name>
+    <description>WWW server</description>
+    <site>http://www.apache.org</site>
+    <sourceCode>open</sourceCode>
+    <category>WWW server</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="xalan">
+    <name>xalan</name>
+    <description>XSL/XSLT implementation, from Apache</description>
+    <site>http://xml.apache.org/xalan</site>
+    <sourceCode>open</sourceCode>
+    <interface>command</interface>
+    <category>XSLT</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="Cocoon">
+    <name>Cocoon</name>
+    <description>XML/XSL-based Web publishing framework, from Apache</description>
+    <site>http://xml.apache.org/cocoon/</site>
+  </Tool>
+  <Tool xmlns="" rdf:ID="SiLRI">
+    <name>Simple Logic-based RDF Interpreter (SiLRI)</name>
+    <description>a main-memory logic-based inference engine</description>
+    <site>http://www.ontoprise.de/download/</site>
+    <interface>command</interface>
+    <uses rdf:resource="#SiRPAC"/>
+    <category>Inference Engine</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="XMLSpy">
+    <name>XML Spy</name>
+    <description>XML Integrated Development Environment</description>
+    <site>http://www.xmlspy.com/</site>
+    <interface>gui</interface>
+    <price>$149</price>
+    <category>XML Editor</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="Protege">
+    <name>Protege</name>
+    <description>ontology editor</description>
+    <site>http://protege.stanford.edu</site>
+    <sourceCode>mozilla</sourceCode>
+    <interface>gui</interface>
+    <category>Ontology Editor</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="rdfDB">
+    <name>rdfDB</name>
+    <description>rdfDB is intended to be a simple, scalable, open-source database for RDF</description>
+    <site>http://www.guha.com/rdfdb/</site>
+    <sourceCode>open</sourceCode>
+    <interface>socket</interface>
+    <interface>c_api</interface>
+    <category>RDF Storage</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="OAA">
+    <name>Open Agent Architecture (OAA)</name>
+    <description>A framework for integrating a community of heterogeneous software agents in a distributed environment.</description>
+    <site>http://www.ai.sri.com/~oaa/</site>
+    <interface>java_api</interface>
+    <interface>c_api</interface>
+    <interface>prolog_api</interface>
+    <category>Agent Infrastructure</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="WebL">
+    <name>Compaq's Web Language (WebL)</name>
+    <description>WWW scripting language</description>
+    <site>http://www.research.digital.com/SRC/WebL/</site>
+    <sourceCode>open</sourceCode>
+    <interface>command</interface>
+    <category>HTML Screen Scraper</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="W4F">
+    <name>World Wide Web Wrapper Factory (W4F)</name>
+    <description>W4F is a toolkit for building software components that integrate
+               Web-published data into applications.</description>
+    <site>http://www.tropea-inc.com/technology/W4F/</site>
+    <price>$995</price>
+    <category>HTML Screen Scraper</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="ArgoUML">
+    <name>ArgoUML</name>
+    <description>UML object oriented design tool</description>
+    <site>http://www.argouml.com</site>
+    <sourceCode>open</sourceCode>
+    <interface>gui</interface>
+    <category>UML Editor</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="libwww">
+    <name>libwww</name>
+    <description>Libwww is a highly modular, general-purpose client side Web API written in C for Unix and Windows (Win32).</description>
+    <site>http://www.w3.org/Library/</site>
+    <interface>c_api</interface>
+  </Tool>
+  <Tool xmlns="" rdf:ID="CoABS_Grid">
+    <name>CoABS Grid</name>
+    <description>
+    an infrastructure for the run-time integration
+    of heterogeneous multi-agent and legacy systems,
+    based on Sun's Jini,
+    from one of DAML's sister programs
+    </description>
+    <site>http://coabs.globalinfotek.com</site>
+    <interface>java_api</interface>
+    <category>Agent Infrastructure</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="JESS">
+    <name>Java Expert System Shell (JESS)</name>
+    <description>
+    JESS is a rule engine and scripting environment, originally inspired by the CLIPS expert system shell.
+  </description>
+    <site>http://herzberg.ca.sandia.gov/jess/</site>
+    <interface>java_api</interface>
+    <category>Inference Engine</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="expat">
+    <name>XML Parser Toolkit (expat)</name>
+    <description>non-validating XML 1.0 parser</description>
+    <site>http://www.jclark.com/xml/expat.html</site>
+    <sourceCode>gpl</sourceCode>
+    <interface>c_api</interface>
+    <category>XML Parser</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="XT">
+    <name>XT</name>
+    <description>implementation in Java of XSL Transformations</description>
+    <site>http://www.jclark.com/xml/xt.html</site>
+    <interface>java_api</interface>
+    <interface>command</interface>
+    <category>XSLT</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="PARKA">
+    <name>PARKA-DB</name>
+    <description>a scalable knowledge representation and storage system merging KB and DB technologies</description>
+    <site>http://www.cs.umd.edu/projects/plus/Parka/</site>
+    <interface>socket</interface>
+    <category>RDF Storage</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="XSV">
+    <name>XML Schema Validator (XSV)</name>
+    <description>...</description>
+    <site>http://www.w3.org/2001/03/webdata/xsv</site>
+    <interface>www</interface>
+    <category>XML Schema Validator</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="GraphViz">
+    <name>GraphViz</name>
+    <description>graph drawing tools</description>
+    <site>http://www.research.att.com/sw/tools/graphviz/</site>
+    <sourceCode>open</sourceCode>
+    <interface>command</interface>
+    <interface>gui</interface>
+    <interface>www</interface>
+    <category>Graph Visualization</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="XSB">
+    <name>XSB</name>
+    <description>Prolog-based Logic Programming and Deductive Database system</description>
+    <site>http://xsb.sourceforge.net</site>
+    <sourceCode>open</sourceCode>
+    <interface>command</interface>
+    <category>Inference Engine</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="SWISH-E">
+    <name>Simple Web Indexing System for Humans -- Enhanced (SWISH-E)</name>
+    <description>fast, powerful, flexible, free, and easy to use system for indexing collections of Web pages or other text files.</description>
+    <site>http://sunsite.berkeley.edu/SWISH-E/</site>
+    <sourceCode>open</sourceCode>
+    <category>Search Engine</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="webinator">
+    <name>Webinator</name>
+    <description>Web index and retrieval system.  Both free and COTS versions are available.</description>
+    <site>http://www.thunderstone.com/webinator/</site>
+    <category>Search Engine</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="MySQL">
+    <name>MySQL</name>
+    <description>relational database management system</description>
+    <site>http://www.mysql.com</site>
+    <sourceCode>gpl</sourceCode>
+    <interface>c_api</interface>
+    <interface>java_api</interface>
+    <interface>command</interface>
+    <category>Database Management System</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="OpenSSL">
+    <name>OpenSSL</name>
+    <description>Secure Sockets Layer toolkit, including 
+  support for SSL streams, X.509 Certificate Authority functions, and a
+  general purpose cryptographic library.
+  OpenSSL is based on the SSLeay library.</description>
+    <site>http://www.openssl.org</site>
+    <sourceCode>apache</sourceCode>
+    <interface>c_api</interface>
+    <interface>command</interface>
+    <category>Security</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="MultiTes">
+    <name>MultiTes</name>
+    <description>thesaurus construction and management tool</description>
+    <site>http://www.cris.com/~multites</site>
+    <interface>gui</interface>
+    <price>$295</price>
+    <category>Thesaurus Construction</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="cvs">
+    <name>Concurrent Versions System (CVS)</name>
+    <description>source code control system</description>
+    <site>http://www.cvshome.org</site>
+    <sourceCode>gpl</sourceCode>
+    <interface>command</interface>
+    <category>Version Control</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="vrp">
+    <name>ICS-FORTH Validating RDF Parser (VRP)</name>
+    <description>RDF Parser, which validates content against constrained specified in RDF Schema</description>
+    <site>http://www.ics.forth.gr/proj/isst/RDF/</site>
+    <sourceCode>open</sourceCode>
+    <uses rdf:resource="#sunxsd"/>
+    <category>RDF Parser</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="wordnet">
+    <name>WordNet</name>
+    <description>a Lexical Database for English</description>
+    <site>http://www.cogsci.princeton.edu/~wn/</site>
+  </Tool>
+  <Tool xmlns="" rdf:ID="tau">
+    <name>Telelogic Tau UML Suite</name>
+    <description>UML Suite</description>
+    <site>http://www.telelogic.com/UML/</site>
+    <interface>gui</interface>
+    <category>UML Editor</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="viewer">
+    <name>DAML Viewer</name>
+    <description>DAML Viewer, allowing navigation among the instances represented in a given DAML page</description>
+    <site>http://www.daml.org/viewer/</site>
+    <sourceCode>open</sourceCode>
+    <interface>gui</interface>
+    <interface>applet</interface>
+    <category>DAML Viewer</category>
+    <project rdf:resource="#DAML"/>
+  </Tool>
+  <Tool xmlns="" rdf:ID="commonrules">
+    <name>CommonRules</name>
+    <description>rule-based development system</description>
+    <site>http://alphaworks.ibm.com</site>
+    <interface>command</interface>
+    <category>Inference Engine</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="tomsawyer">
+    <name>Tom Sawyer Graph Layout/Editor Tools</name>
+    <description>...</description>
+    <site>http://www.tomsawyer.com</site>
+    <price>academic discount</price>
+    <category>Graph Visualization</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="rose">
+    <name>Rational Rose</name>
+    <description>...</description>
+    <site>http://www.rational.com</site>
+    <price>?</price>
+    <category>UML Editor</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="chimaera">
+    <name>Chimaera</name>
+    <description>Chimaera is a software system that supports users in creating and maintaining distributed ontologies on the web.  Two major functions it
+supports are merging multiple ontologies together and diagnosing individual or multiple ontologies.  It supports users in such tasks as loading
+knowledge bases in differing formats, reorganizing taxonomies, resolving name conflicts, browsing ontologies, editing terms, etc.</description>
+    <site>http://www.ksl.Stanford.EDU/software/chimaera/</site>
+    <interface>www</interface>
+    <interface>okbc</interface>
+    <category>Ontology Analyzer</category>
+    <project rdf:resource="#DAML"/>
+  </Tool>
+  <Tool xmlns="" rdf:ID="opera">
+    <name>Opera</name>
+    <description>...</description>
+    <site>http://www.opera.com</site>
+    <interface>gui</interface>
+    <price>$39</price>
+    <category>WWW browser</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="oiled">
+    <name>OilEd</name>
+    <description>... includes interface to FaCT reasoner</description>
+    <site>http://oiled.man.ac.uk/</site>
+    <sourceCode>gpl</sourceCode>
+    <interface>gui</interface>
+    <uses rdf:resource="#FaCT"/>
+    <category>Ontology Editor</category>
+    <project rdf:resource="#DAML"/>
+  </Tool>
+  <Tool xmlns="" rdf:ID="rdfcrawl">
+    <name>RDF Crawler</name>
+    <description>...</description>
+    <site>http://ontobroker.semanticweb.org/rdfcrawl/index.html</site>
+    <interface>command</interface>
+    <interface>java_api</interface>
+    <category>DAML Crawler</category>
+    <project rdf:resource="#DAML"/>
+  </Tool>
+  <Tool xmlns="" rdf:ID="webstats">
+    <name>Perl WebStats</name>
+    <description>...</description>
+    <site>http://www.gallanttech.com/resources/documentation/webstats/</site>
+    <sourceCode>gpl</sourceCode>
+    <interface>www</interface>
+    <category>WWW Site Statistics</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="damlcrawl">
+    <name>DAML Crawler</name>
+    <description>...</description>
+    <site>http://www.daml.org/crawler/</site>
+    <interface>command</interface>
+    <interface>gui</interface>
+    <interface>dbms</interface>
+    <category>DAML Crawler</category>
+    <project rdf:resource="#DAML"/>
+  </Tool>
+  <Tool xmlns="" rdf:ID="tomcat">
+    <name>Tomcat</name>
+    <description>Java Servlet implementation for Apache</description>
+    <site>http://jakarta.apache.org/tomcat/</site>
+  </Tool>
+  <Tool xmlns="" rdf:ID="amaya">
+    <name>Amaya</name>
+    <description>WWW browser for standards experimentation</description>
+    <site>http://www.w3.org/Amaya/</site>
+    <sourceCode>open</sourceCode>
+    <interface>gui</interface>
+    <category>WWW browser</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="emacs">
+    <name>GNU Emacs</name>
+    <description>powerful, portable, extensible text editor</description>
+    <site>http://www.fsf.org/software/emacs/emacs.html</site>
+    <sourceCode>gpl</sourceCode>
+    <interface>gui</interface>
+    <category>Text Editor</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="slidemaker">
+    <name>SlideMaker</name>
+    <description>HTML-based briefing tool</description>
+    <site>http://www.w3.org/Talks/slidemaker/YYMMsub/Overview.html</site>
+    <sourceCode>open</sourceCode>
+    <interface>www</interface>
+    <category>Presentation Tools</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="PDBcruncher">
+    <name>PDBcruncher</name>
+    <description>dramatically speeds up HotSync of Palm database (.pdb) files</description>
+    <site>http://www.bigfoot.com/~klyatskin/</site>
+    <interface>command</interface>
+    <price>$12</price>
+    <category>PalmOS utilities</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="Jena">
+    <name>Jena</name>
+    <description>Java toolkit for RDF and DAML+OIL, from HP Labs Bristol.  It supports both resource- and statement-centric processing, and daml:collection.</description>
+    <site>http://www.hpl.hp.com/semweb/</site>
+    <sourceCode>bsd</sourceCode>
+    <interface>java_api</interface>
+    <category>RDF Parser</category>
+    <category>DAML API</category>
+    <category>Persistence</category>
+    <category>RDF Query</category>
+    <project rdf:resource="#DAML"/>
+  </Tool>
+  <Tool xmlns="" rdf:ID="Redland">
+    <name>Redland</name>
+    <description>RDF application framework, currently supporting C, Perl, Python, and Tcl.</description>
+    <site>http://www.redland.opensource.ac.uk/</site>
+    <interface>c_api</interface>
+    <interface>perl_api</interface>
+    <interface>python_api</interface>
+    <interface>tcl_api</interface>
+    <category>RDF Parser</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="OntoEdit">
+    <name>OntoEdit</name>
+    <description>an Ontology Editor, which can import and export DAML+OIL as well as RDF and F-Logic</description>
+    <site>http://www.ontoprise.de</site>
+    <interface>gui</interface>
+    <category>Ontology Editor</category>
+    <project rdf:resource="#DAML"/>
+  </Tool>
+  <Tool xmlns="" rdf:ID="RDFedt">
+    <name>RDFedt</name>
+    <description>an RDF content editor, which includes a DAML Element Set plugin</description>
+    <site>http://www.jan-winkler.de/dev/e_rdfe.htm</site>
+    <interface>gui</interface>
+    <category>XML Editor</category>
+    <project rdf:resource="#DAML"/>
+  </Tool>
+  <Tool xmlns="" rdf:ID="Hypermail">
+    <name>Hypermail</name>
+    <description>generate cross-referenced HTML pages from a Unix mailbox</description>
+    <site>http://www.hypermail.org</site>
+    <interface>www</interface>
+    <category>EMail Archive</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="Majordomo">
+    <name>Majordomo</name>
+    <description>email-based program to automate the management of Internet mailing lists</description>
+    <site>http://www.greatcircle.com/majordomo/</site>
+    <interface>email</interface>
+    <category>EMail List Manager</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="yajxb">
+    <name>Yet Another Java-XSB Bridge (Yajxb)</name>
+    <description>Java Native Interface (JNI) interface to XSB</description>
+    <site>http://www-db.stanford.edu/~stefan/rdb/yajxb/</site>
+    <sourceCode>open</sourceCode>
+    <interface>java_api</interface>
+  </Tool>
+  <Tool xmlns="" rdf:ID="cygwin">
+    <name>Cygwin</name>
+    <description>Unix tools for Windows</description>
+    <site>http://sources.redhat.com/cygwin/</site>
+    <sourceCode>open</sourceCode>
+    <interface>command</interface>
+  </Tool>
+  <Tool xmlns="" rdf:ID="DAML_API">
+    <name>DAML API</name>
+    <description>The DAML API is a collection of Java interfaces and utility classes that implements an interface for manipulating DAML ontologies.</description>
+    <site>http://grcinet.grci.com/maria/www/codipsite/Tools/Components.html</site>
+    <interface>java_api</interface>
+    <category>DAML API</category>
+    <project rdf:resource="#DAML"/>
+  </Tool>
+  <Tool xmlns="" rdf:ID="fssh">
+    <name>F-Secure SSH Client</name>
+    <description>commercial ssh client</description>
+    <site>http://www.f-secure.com/</site>
+    <interface>gui</interface>
+    <price>$119</price>
+    <category>Secure Shell Client</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="PuTTY">
+    <name>PuTTY</name>
+    <description>free implementation of telnet and ssh for Win32 platforms, along with an xterm terminal emulator (does not include port forwarding)</description>
+    <site>http://www.chiark.greenend.org.uk/~sgtatham/putty/</site>
+    <sourceCode>open</sourceCode>
+    <interface>gui</interface>
+    <category>Secure Shell Client</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="HyperDAML">
+    <name>HyperDAML</name>
+    <description>generate hyperlinked HTML pages from DAML content</description>
+    <site>http://projects.semwebcentral.org/projects/hyperdaml/</site>
+    <interface>command</interface>
+    <interface>www</interface>
+    <category>DAML Browser</category>
+    <project rdf:resource="#DAML"/>
+  </Tool>
+  <Tool xmlns="" rdf:ID="Squish">
+    <name>Rudolf Squish</name>
+    <description>...</description>
+    <site>http://swordfish.rdfweb.org/rdfquery/</site>
+    <interface>command</interface>
+    <interface>java_api</interface>
+    <interface>www</interface>
+    <category>RDF Query</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="RDFStore">
+    <name>RDFStore</name>
+    <description>RDF storage based on hashed databases
+e.g. BerkeleyDB, a parser and a perl based API compatible with the
+Stanford Java Draft API.
+  </description>
+    <site>http://rdfstore.sourceforge.net</site>
+    <interface>perl_api</interface>
+    <category>RDF Storage</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="validator">
+    <name>DAML Validator</name>
+    <description>
+    The DAML Validator is a tool to check DAML markup for
+    problems beyond simple syntax errors. 
+  </description>
+    <site>http://www.daml.org/validator/</site>
+    <interface>www</interface>
+    <uses rdf:resource="#RDF_API"/>
+    <category>DAML Validator</category>
+    <project rdf:resource="#DAML"/>
+  </Tool>
+  <Tool xmlns="" rdf:ID="cwm">
+    <name>cwm</name>
+    <description>Cwm is a general-purpose data processor for the semantic web.  It is a forward chaining reasoner which can be used for querying, checking, transforming and filtering information.  Its core language is RDF, extended to include rules, and it uses RDF/XML or Notation 3 (N3) serializations as required.</description>
+    <site>http://www.w3.org/2000/10/swap/doc/cwm</site>
+    <sourceCode>open</sourceCode>
+    <interface>python_api</interface>
+    <uses rdf:resource="#Python"/>
+    <category>Inference Engine</category>
+    <project rdf:resource="#DAML"/>
+  </Tool>
+  <Tool xmlns="" rdf:ID="n3tordf">
+    <name>n3tordf</name>
+    <description>WWW interface to cwm/n3</description>
+    <site>http://swag.semanticweb.org/n3tordf</site>
+    <interface>www</interface>
+    <project rdf:resource="#DAML"/>
+  </Tool>
+  <Tool xmlns="" rdf:ID="FaCT">
+    <name>Fast Classification of Terminologies (FaCT)</name>
+    <description>a Description Logic (DL) classifier that can also be used for modal logic satisfiability testing.  The FaCT system includes two reasoners, one for the logic SHF (ALC augmented with transitive roles, functional roles and a role hierarchy) and the other for the logic SHIQ (SHF augmented with inverse roles and qualified number restrictions), both of which use sound and complete tableaux algorithms.</description>
+    <site>http://www.cs.man.ac.uk/FaCT</site>
+    <sourceCode>gpl</sourceCode>
+    <interface>lisp_api</interface>
+    <interface>corba</interface>
+    <category>Inference Engine</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="WWWOFFLE">
+    <name>WWW Offline Explorer (WWWOFFLE)</name>
+    <description>simple proxy server/cache for use with dial-up Internet links</description>
+    <site>http://www.gedanken.demon.co.uk/wwwoffle/</site>
+    <category>HTTP Cache</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="OpenMap">
+    <name>OpenMap</name>
+    <description>...</description>
+    <site>http://openmap.bbn.com</site>
+    <sourceCode>open</sourceCode>
+    <interface>gui</interface>
+    <interface>java_api</interface>
+    <category>Map Toolkit</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="Zope">
+    <name>Zope</name>
+    <description>web application server</description>
+    <site>http://www.zope.org</site>
+    <sourceCode>open</sourceCode>
+    <category>Application Server</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="Webscripter">
+    <name>Webscripter</name>
+    <description>WebScripter is a tool that enables ordinary users to easily and quickly assemble reports extracting and fusing information from multiple, heterogeneous DAMLized Web sources.</description>
+    <site>http://www.isi.edu/webscripter/</site>
+    <interface>www</interface>
+    <category>Report Generation</category>
+    <project rdf:resource="#DAML"/>
+  </Tool>
+  <Tool xmlns="" rdf:ID="damlxslt">
+    <name>DAML/XSLT Adapter</name>
+    <description>The DAML/XSLT Adapter allows users to convert an arbitrary DAML document into another specific form of your choosing, such as XML, HTML, WML, or any other form, utilizing an XSL Style Sheet.</description>
+    <site>http://www.davincinetbook.com:8080/daml/damlxslt/</site>
+    <interface>command</interface>
+    <interface>java_api</interface>
+    <category>DAML Transformation</category>
+    <project rdf:resource="#DAML"/>
+  </Tool>
+  <Tool xmlns="" rdf:ID="Sesame">
+    <name>Sesame</name>
+    <description>Sesame is a modular architecture for storage, inferencing and
+querying of RDF and RDF Schema. It supports three query languages
+(RQL, SeRQL and RDQL), full RDF MT inferencing and can use main
+memory or a relational database for storage.</description>
+    <site>http://sesame.aidministrator.nl</site>
+    <interface>www</interface>
+    <interface>http</interface>
+    <interface>java_rmi</interface>
+    <interface>soap</interface>
+    <interface>java_api</interface>
+    <category>Persistence</category>
+    <category>Inference Engine</category>
+    <category>RDF Parser</category>
+    <category>RDF Query</category>
+    <project rdf:resource="#DAML"/>
+  </Tool>
+  <Tool xmlns="" rdf:ID="Annotea">
+    <name>Annotea</name>
+    <description>...</description>
+    <site>http://www.w3.org/2001/Annotea/</site>
+    <sourceCode>open</sourceCode>
+    <interface>http</interface>
+    <category>Annotation</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="Quantify">
+    <name>Quantify</name>
+    <description>performance profiling and analysis of C++ and Java programs</description>
+    <site>http://www.rational.com/products/quantify_nt/index.jsp</site>
+    <interface>gui</interface>
+    <price>$625</price>
+    <category>Performance Analysis</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="Wilbur">
+    <name>Wilbur RDF Toolkit</name>
+    <description>Common Lisp RDF/DAML toolkit, from Nokia</description>
+    <site>http://wilbur-rdf.sourceforge.net</site>
+    <sourceCode>open</sourceCode>
+    <interface>lisp_api</interface>
+    <category>RDF Parser</category>
+    <project rdf:resource="#DAML"/>
+  </Tool>
+  <Tool xmlns="" rdf:ID="ConsVISor">
+    <name>ConsVISor</name>
+    <description>a Prolog-based consistency checker for DAML+OIL ontologies</description>
+    <site>http://vistology.com/consvisor/</site>
+    <interface>www</interface>
+    <category>Ontology Analyzer</category>
+    <project rdf:resource="#DAML"/>
+  </Tool>
+  <Tool xmlns="" rdf:ID="ontomat">
+    <name>Ontomat</name>
+    <description>Ontomat is a user-friendly interactive webpage annotation tool
+   that includes an ontology browser and an HTML browser.
+  </description>
+    <site>http://ontobroker.semanticweb.org/annotation/ontomat/index.html</site>
+    <interface>gui</interface>
+    <category>Annotation</category>
+    <project rdf:resource="#DAML"/>
+  </Tool>
+  <Tool xmlns="" rdf:ID="dumpont">
+    <name>dumpont</name>
+    <description>simple class and property hierarchy viewer</description>
+    <site>http://projects.semwebcentral.org/projects/dumpont/</site>
+    <interface>www</interface>
+    <category>Ontology Visualization</category>
+    <project rdf:resource="#DAML"/>
+  </Tool>
+  <Tool xmlns="" rdf:ID="Triple">
+    <name>TRIPLE</name>
+    <description>...</description>
+    <site>http://triple.semanticweb.org</site>
+    <uses rdf:resource="#Jena"/>
+    <uses rdf:resource="#XSB"/>
+    <category>Inference Engine</category>
+    <project rdf:resource="#DAML"/>
+  </Tool>
+  <Tool xmlns="" rdf:ID="DAMLJessKB">
+    <name>DAMLJessKB</name>
+    <description>A library which uses RDF API to read in DAML files and feeds
+the triples into JESS, a Java-based expert system. The rules in the expert
+system apply the DAML semantics to the triples, creating new facts.
+  </description>
+    <site>http://edge.mcs.drexel.edu/assemblies/software/damljesskb/damljesskb.html</site>
+    <sourceCode>gpl</sourceCode>
+    <interface>java_api</interface>
+    <uses rdf:resource="#JESS"/>
+    <category>DAML API</category>
+    <project rdf:resource="#DAML"/>
+  </Tool>
+  <Tool xmlns="" rdf:ID="DAMLMarkup">
+    <name>DAML Markup Tool</name>
+    <description>Colorizes and cross-references definitions in DAML
+ontologies, generating a web page to view.
+  </description>
+    <site>http://plan.mcs.drexel.edu/cgi-bin/daml/markup.pl</site>
+    <sourceCode>open</sourceCode>
+    <interface>www</interface>
+    <category>DAML Browser</category>
+    <project rdf:resource="#DAML"/>
+  </Tool>
+  <Tool xmlns="" rdf:ID="OntoDoc">
+    <name>OntoDoc</name>
+    <description>Generates web pages describing DAML ontologies.</description>
+    <site>http://plan.mcs.drexel.edu/projects/legorobots/design/software/OntoDoc/</site>
+    <sourceCode>open</sourceCode>
+    <interface>command</interface>
+    <interface>www</interface>
+    <category>DAML Browser</category>
+    <project rdf:resource="#DAML"/>
+  </Tool>
+  <Tool xmlns="" rdf:ID="damlbar">
+    <name>DAML Sidebar</name>
+    <description>DAML Sidebar provides an easy means of detecting embedded DAML content and processing it with various DAML tools.  Works with Mozilla or Netscape 6.</description>
+    <site>http://yellowhouseassociates.com/damlbar</site>
+    <interface>www</interface>
+    <category>DAML Browser</category>
+    <project rdf:resource="#DAML"/>
+  </Tool>
+  <Tool xmlns="" rdf:ID="JProbe">
+    <name>JProbe</name>
+    <description>Java performance analysis tool</description>
+    <site>http://www.sitraka.com/software/jprobe/</site>
+    <interface>gui</interface>
+    <category>Performance Analysis</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="J-Integra">
+    <name>J-Integra</name>
+    <description>pure Java-COM bridge</description>
+    <site>http://www.intrinsyc.com/jintegra</site>
+    <category>Middleware Bridge</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="stylus">
+    <name>Stylus Studio</name>
+    <description>XML development environment</description>
+    <site>http://www.stylusstudio.com</site>
+    <interface>gui</interface>
+    <price>$199</price>
+    <category>XML Editor</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="oraclexsd">
+    <name>Oracle XML Schema Processor</name>
+    <description>
+    ...  
+    The oracle.xml.parser.schema.XSDSimpleType package
+    can be used to validate datatype values.
+    This is now included in the
+    Oracle XML Development Kit for Java
+    at http://otn.oracle.com/software/tech/xml/xdk_java/content.html.
+  </description>
+    <site>http://technet.oracle.com/tech/xml/schema_java/</site>
+    <interface>java_api</interface>
+    <category>XML Schema API</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="Algae">
+    <name>Algae</name>
+    <description>Algae is a constraint-based query interface based on algernon.</description>
+    <site>http://www.w3.org/1999/02/26-modules/User/Algae-HOWTO.html</site>
+    <interface>perl_api</interface>
+    <category>RDF Query</category>
+    <project rdf:resource="#DAML"/>
+  </Tool>
+  <Tool xmlns="" rdf:ID="PalmDAML">
+    <name>PalmDAML</name>
+    <description>handheld DAML viewer running under PalmOS</description>
+    <site>http://www.daml.org/PalmDAML/</site>
+    <sourceCode>open</sourceCode>
+    <interface>gui</interface>
+    <category>DAML Viewer</category>
+    <project rdf:resource="#DAML"/>
+  </Tool>
+  <Tool xmlns="" rdf:ID="OntoMap">
+    <name>OntoMap.org</name>
+    <description>portal that provides access to upper-level ontologies and hand-crafted mappings between them, in various formats (at least RDFS, DAML+OIL and KIF)</description>
+    <site>http://www.ontomap.org</site>
+    <interface>www</interface>
+    <category>Ontology Library</category>
+    <project rdf:resource="#DAML"/>
+  </Tool>
+  <Tool xmlns="" rdf:ID="Euler">
+    <name>Euler proof mechanism</name>
+    <description>..., includes support for Notation 3 (n3)</description>
+    <site>http://www.agfa.com/w3c/euler/</site>
+    <interface>java_api</interface>
+    <category>Inference Engine</category>
+    <project rdf:resource="#DAML"/>
+  </Tool>
+  <Tool xmlns="" rdf:ID="explorer">
+    <name>RDF Schema Explorer</name>
+    <description>...</description>
+    <site>http://wonkituck.wi-inf.uni-essen.de/rdfs.html</site>
+    <interface>www</interface>
+  </Tool>
+  <Tool xmlns="" rdf:ID="xsd2daml">
+    <name>XML Schema to DAML Translator</name>
+    <description>...</description>
+    <site>http://www.davinciNetBook.com:8080/daml/xmltodaml/xmltodaml.html</site>
+    <interface>command</interface>
+    <category>Import</category>
+    <project rdf:resource="#DAML"/>
+  </Tool>
+  <Tool xmlns="" rdf:ID="dtd2xs">
+    <name>dtd2xs</name>
+    <description>XML DTD to XML Schema translator</description>
+    <site>http://puvogel.informatik.med.uni-giessen.de/dtd2xs/</site>
+    <sourceCode>gpl</sourceCode>
+    <interface>command</interface>
+  </Tool>
+  <Tool xmlns="" rdf:ID="checker">
+    <name>DAML+OIL Ontology Checker</name>
+    <description>Web interface to check DAML+OIL ontologies and content using Jena</description>
+    <site>http://img.cs.man.ac.uk/oil/checker</site>
+    <interface>www</interface>
+    <category>Ontology Analyzer</category>
+    <project rdf:resource="#DAML"/>
+  </Tool>
+  <Tool xmlns="" rdf:ID="DUET">
+    <name>DAML UML Enhanced Tool (DUET)</name>
+    <description>DUET provides a UML visualization and authoring environment for DAML.  DUET is available as a Rational Rose Addin or an ArgoUML plugin.</description>
+    <site>http://grcinet.grci.com/maria/www/CodipSite/Tools/Tools.html</site>
+    <interface>gui</interface>
+    <uses rdf:resource="#rose"/>
+    <uses rdf:resource="#ArgoUML"/>
+    <category>Ontology Editor</category>
+    <project rdf:resource="#DAML"/>
+  </Tool>
+  <Tool xmlns="" rdf:ID="ARP">
+    <name>Another RDF Parser (ARP)</name>
+    <description>streaming parser for RDF, compatible with Jena</description>
+    <site>http://www-uk.hpl.hp.com/people/jjc/arp/index.html</site>
+    <sourceCode>open</sourceCode>
+    <interface>java_api</interface>
+    <category>RDF Parser</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="VisioDAML">
+    <name>VisioDAML</name>
+    <description>
+
+    VisioDAML is a Visio application to illustrate how Visio can be
+    used to create graphical representations of DAML+OIL
+    ontologies. This implementation is intended to provide, as close
+    as possible, a direct one-to-one mapping between the DAML+OIL
+    language constructs and their graphical representation.
+    
+  </description>
+    <site>http://www.daml.org/visiodaml/</site>
+    <category>DAML Graph Visualization</category>
+    <project rdf:resource="#DAML"/>
+  </Tool>
+  <Tool xmlns="" rdf:ID="repat">
+    <name>RDF Parser Toolkit (repat)</name>
+    <description>repat is a callback-based RDF parser built on James Clark's expat.  It's implemented in Standard C and should be usable in most environments.</description>
+    <site>http://injektilo.org/rdf/repat.html</site>
+    <sourceCode>open</sourceCode>
+    <interface>c_api</interface>
+    <category>RDF Parser</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="sleepycat">
+    <name>Sleepycat Berkeley DB</name>
+    <description>non-SQL embedded database system</description>
+    <site>http://www.sleepycat.com</site>
+    <sourceCode>open</sourceCode>
+    <interface>c_api</interface>
+    <interface>cpp_api</interface>
+    <interface>java_api</interface>
+    <interface>tcl_api</interface>
+    <category>Database Management System</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="RDQL">
+    <name>RDF Data Query Language (RDQL)</name>
+    <description>an implementation of a SquishQL-based query language on top of Jena</description>
+    <site>http://www-uk.hpl.hp.com/people/afs/RDQL/</site>
+    <sourceCode>open</sourceCode>
+    <interface>command</interface>
+    <interface>java_api</interface>
+    <category>Query</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="damldb">
+    <name>DAML DB</name>
+    <description>a scalable, high-performance persistent store for RDF/DAML+OIL content</description>
+    <site>http://www.daml.org/2001/09/damldb/</site>
+    <interface>cpp_api</interface>
+    <interface>java_api</interface>
+    <category>Persistence</category>
+    <project rdf:resource="#DAML"/>
+  </Tool>
+  <Tool xmlns="" rdf:ID="rdf2java">
+    <name>FRODO rdf2java</name>
+    <description>allows RDF files to be imported into Java and Java objects to be exported to RDF files</description>
+    <site>http://www.dfki.uni-kl.de/frodo/rdf2java/</site>
+  </Tool>
+  <Tool xmlns="" rdf:ID="WinVNC">
+    <name>WinVNC</name>
+    <description>Virtual Network Computing (VNC) server that will allow you to view your Windows desktop from any VNC viewer (including a Web browser).</description>
+    <site>http://www.uk.research.att.com/vnc/winvnc.html</site>
+    <sourceCode>open</sourceCode>
+    <interface>www</interface>
+    <interface>gui</interface>
+    <category>Remote Access</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="pddl2daml">
+    <name>PDDL to DAML Translator</name>
+    <description>a translator from Planning Domain Definition Language (PDDL) to (and soon from) DAML+OIL</description>
+    <site>http://cs-www.cs.yale.edu/homes/dvm/daml/pddl_daml_translator.html</site>
+    <sourceCode>open</sourceCode>
+    <interface>command</interface>
+    <uses rdf:resource="#Jena"/>
+    <category>Import</category>
+    <project rdf:resource="#DAML"/>
+  </Tool>
+  <Tool xmlns="" rdf:ID="Cerebra">
+    <name>Cerebra</name>
+    <description>...</description>
+    <site>http://www.networkinference.com</site>
+    <category>Inference Engine</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="blindfold">
+    <name>Blindfold</name>
+    <description>Semantic Web toolkit</description>
+    <site>http://www.w3.org/2001/06/blindfold/</site>
+    <interface>command</interface>
+    <interface>cpp_api</interface>
+    <uses rdf:resource="#XSB"/>
+  </Tool>
+  <Tool xmlns="" rdf:ID="Castor">
+    <name>Castor</name>
+    <description>Java data binding framework, including support for XML Schema Datatypes</description>
+    <site>http://castor.exolab.org/</site>
+    <interface>java_api</interface>
+    <category>XML Schema API</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="RDF_NET">
+    <name>RDF.NET</name>
+    <description>RDF.NET is a framework capable of parsing and processing RDF models for Microsoft's new .NET platform</description>
+    <site>http://injektilo.org/rdf/rdf.net.html</site>
+    <sourceCode>open</sourceCode>
+    <interface>cs_api</interface>
+  </Tool>
+  <Tool xmlns="" rdf:ID="Jaxen">
+    <name>Jaxen:  Java XPath Engine</name>
+    <description>Jaxen is a universal object model walker, capable of evaluating XPath expressions across DOM and other models</description>
+    <site>http://jaxen.org</site>
+    <sourceCode>open</sourceCode>
+    <interface>java_api</interface>
+  </Tool>
+  <Tool xmlns="" rdf:ID="java2owl">
+    <name>java2owl</name>
+    <description>converts Java classes and instances to OWL</description>
+    <site>http://www.daml.org/2003/10/java2owl/</site>
+    <interface>java_api</interface>
+    <project rdf:resource="#DAML"/>
+  </Tool>
+  <Tool xmlns="" rdf:ID="idl2owl">
+    <name>idl2owl</name>
+    <description>generate an OWL ontology from CORBA Interface Definition Language (IDL)</description>
+    <site>http://www.daml.org/2003/10/idl2owl/</site>
+    <interface>java_api</interface>
+    <project rdf:resource="#DAML"/>
+  </Tool>
+  <Tool xmlns="" rdf:ID="AeroDAML">
+    <name>AeroDAML</name>
+    <description>Automatically generates basic DAML annotation/markup from text
+and webpages.  The web version is oriented toward novice/infrequent DAML annotators; the client/server version is oriented toward personnel who routinely produce documents or need to annotate legacy documents.</description>
+    <site>http://ubot.lockheedmartin.com/ubot/hotdaml/aerodaml.html</site>
+    <interface>www</interface>
+    <interface>gui</interface>
+    <category>DAML Annotation</category>
+    <project rdf:resource="#DAML"/>
+  </Tool>
+  <Tool xmlns="" rdf:ID="DAMLVisuaLinks">
+    <name>DAML VisuaLinks</name>
+    <description>Supports graphical navigation of relationships in DAML
+annotated data.  This is oriented toward analysis who mine DAML information.</description>
+    <site>http://daml.visualanalytics.com/</site>
+    <interface>applet</interface>
+    <interface>gui</interface>
+    <category>DAML Graph Visualization</category>
+    <project rdf:resource="#DAML"/>
+  </Tool>
+  <Tool xmlns="" rdf:ID="MonarchGraph">
+    <name>MonarchGraph</name>
+    <description>MonarchGraph is a framework for visualizing graph data structures using Java.  It supports directed and non-directed graphs, provides automated layout, and allows the user to drag and interact with nodes and links.</description>
+    <site>http://www.singleton-labs.com/mgraph.html</site>
+    <interface>java_api</interface>
+    <price>$149</price>
+    <category>Graph Visualization</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="damlemacsmode">
+    <name>DAML Emacs Mode</name>
+    <description>...</description>
+    <site>http://openmap.bbn.com/~burstein/daml-emacs/</site>
+    <uses rdf:resource="#emacs"/>
+    <uses rdf:resource="#xemacs"/>
+    <category>DAML Editor</category>
+    <project rdf:resource="#DAML"/>
+  </Tool>
+  <Tool xmlns="" rdf:ID="ConceptDraw">
+    <name>ConceptDraw</name>
+    <description>ConceptDraw is a powerful cross-platform (Windows and Mac) application for creating business and technical drawings easily.</description>
+    <site>http://www.conceptdraw.com</site>
+    <interface>gui</interface>
+    <price>$249 (Professional download)</price>
+  </Tool>
+  <Tool xmlns="" rdf:ID="REVERSE">
+    <name>KAON-REVERSE</name>
+    <description>KAON-REVERSE is an Ontomat plugin that connects to an existing relational database using JDBC, semi-automatically defines mappings from the database tables to an ontology, and extracts the data contained in the database as instances according to those mappings.</description>
+    <site>http://kaon.semanticweb.org/alphaworld/reverse/</site>
+    <interface>gui</interface>
+    <uses rdf:resource="#ontomat"/>
+    <category>RDBMS Mapping</category>
+    <project rdf:resource="#DAML"/>
+  </Tool>
+  <Tool xmlns="" rdf:ID="Grappa">
+    <name>Grappa</name>
+    <description>...</description>
+    <site>http://www.research.att.com/sw/tools/graphviz/packages/grappa.html</site>
+    <sourceCode>open</sourceCode>
+    <interface>java_api</interface>
+    <uses rdf:resource="#GraphViz"/>
+    <category>Graph Visualization</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="Poseidon">
+    <name>Poseidon</name>
+    <description>Poseidon is a commercial version of the ArgoUML editor.  The APIs are compatible, and the Community edition is free.</description>
+    <site>http://www.gentleware.com</site>
+    <interface>gui</interface>
+    <category>UML Editor</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="dsss">
+    <name>DAML Semantic Search Service</name>
+    <description>allows a user to make precise queries for information encoded in DAML, supporting several kinds of simple inference to support query broadening or relaxation</description>
+    <site>http://reliant.teknowledge.com/DAML/</site>
+    <sourceCode>gpl</sourceCode>
+    <interface>www</interface>
+    <interface>socket</interface>
+    <uses rdf:resource="#swiprolog"/>
+    <category>Search Engine</category>
+    <project rdf:resource="#DAML"/>
+  </Tool>
+  <Tool xmlns="" rdf:ID="Damlator">
+    <name>Damlator Translation Engine</name>
+    <description>Apache module to translate DAML+OIL to NTriples, Prolog, GIF, or PNG</description>
+    <site>http://daml.umbc.edu/downloads/damlator.html</site>
+    <uses rdf:resource="#Apache"/>
+    <project rdf:resource="#DAML"/>
+  </Tool>
+  <Tool xmlns="" rdf:ID="swiprolog">
+    <name>SWI Prolog</name>
+    <description/>
+    <site>http://www.swi-prolog.org/</site>
+    <category>Inference Engine</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="JTP">
+    <name>Java Theorem Prover (JTP)</name>
+    <description/>
+    <site>http://www.ksl.stanford.edu/software/JTP/</site>
+    <interface>command</interface>
+    <interface>java_api</interface>
+    <uses rdf:resource="#Jena"/>
+    <category>Inference Engine</category>
+    <project rdf:resource="#DAML"/>
+  </Tool>
+  <Tool xmlns="" rdf:ID="Ethereal">
+    <name>Ethereal</name>
+    <description>Ethereal is a free network protocol analyzer for Unix and Windows. It allows you to examine data from a live network or from a capture file on disk. You can interactively browse the capture data, viewing summary and detail information for each packet. Ethereal has several powerful features, including a rich display filter language and the ability to view the reconstructed stream of a TCP session.</description>
+    <site>http://www.ethereal.com</site>
+    <sourceCode>open</sourceCode>
+    <category>Network Sniffer</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="xemacs">
+    <name>XEmacs</name>
+    <description>powerful, portable, extensible text editor</description>
+    <site>http://www.xemacs.org</site>
+    <sourceCode>open</sourceCode>
+    <interface>gui</interface>
+    <category>Text Editor</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="RDFAuthor">
+    <name>RDF Author</name>
+    <description>RDFAuthor is a tool designed to ease the pain of creating RDF instance data. Authoring is largely a matter of dragging in data and binding it together using a graphical interface.</description>
+    <site>http://rdfweb.org/people/damian/2001/10/RDFAuthor/</site>
+    <sourceCode>open</sourceCode>
+    <interface>gui</interface>
+  </Tool>
+  <Tool xmlns="" rdf:ID="XIS">
+    <name>Extensible Information Systems (XIS)</name>
+    <description>...</description>
+    <site>http://xis.polexis.com/</site>
+    <interface>gui</interface>
+  </Tool>
+  <Tool xmlns="" rdf:ID="IsaViz">
+    <name>IsaViz</name>
+    <description>IsaViz is a visual environment for browsing and authoring RDF models represented as graphs.</description>
+    <site>http://www.w3.org/2001/11/IsaViz/</site>
+    <sourceCode>open</sourceCode>
+    <interface>gui</interface>
+    <uses rdf:resource="#Jena"/>
+    <uses rdf:resource="#GraphViz"/>
+    <category>DAML Graph Visualization</category>
+    <project rdf:resource="#DAML"/>
+  </Tool>
+  <Tool xmlns="" rdf:ID="Igloo">
+    <name>Jalindi Igloo</name>
+    <description>Jalindi Igloo is a plugin that allows you to connect Microsoft Visual Studio and other IDEs directly to a CVS repository.
+ The program is completely free and can be used anyway you like.</description>
+    <site>http://www.jalindi.com/igloo/</site>
+    <uses rdf:resource="#cvs"/>
+  </Tool>
+  <Tool xmlns="" rdf:ID="OpenCyc">
+    <name>OpenCyc</name>
+    <description>a large upper ontology and supporting tools</description>
+    <site>http://www.opencyc.org</site>
+    <sourceCode>open</sourceCode>
+    <interface>www</interface>
+    <interface>java_api</interface>
+    <category>Knowledge Base</category>
+    <category>Inference Engine</category>
+    <project rdf:resource="#DAML"/>
+  </Tool>
+  <Tool xmlns="" rdf:ID="RDFWS">
+    <name>RDF Web Scraper</name>
+    <description>...  This is derived from Jeff Heflin's "Running SHOE".</description>
+    <site>http://www.mindswap.org/~aditkal/rdf.html</site>
+    <sourceCode>open</sourceCode>
+    <interface>gui</interface>
+    <category>HTML Screen Scraper</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="OntoMerge">
+    <name>OntoMerge</name>
+    <description>OntoMerge serves as a semi-automated nexus for agents and humans to find ways of coping with notational differences between ontologies with overlapping subject areas.</description>
+    <site>http://cs-www.cs.yale.edu/homes/dvm/daml/ontology-translation.html</site>
+    <interface>www</interface>
+    <category>Ontology Translation</category>
+    <project rdf:resource="#DAML"/>
+  </Tool>
+  <Tool xmlns="" rdf:ID="OntoRama">
+    <name>OntoRama</name>
+    <description>Description: OntoRama is a prototype ontology browser originally 
+designed to browse WebKB ontology (http://www.webkb.org). Currently
+OntoRama is used to visualise RDF/DAML ontologies.</description>
+    <site>http://www.webkb.org/ontorama</site>
+    <category>Ontology Browser</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="Thea">
+    <name>Thea RDF Parser</name>
+    <description>Thea RDF parser implements RDF/XML Revised Syntax Specification (W3C's Working Draft 25 March 2002). It is written in Microsoft Visual Basic and uses the MSXML parser.</description>
+    <site>http://www.semanticweb.gr</site>
+    <sourceCode>gpl</sourceCode>
+    <interface>vb_api</interface>
+    <category>RDF Parser</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="SemTalk">
+    <name>SemTalk</name>
+    <description/>
+    <site>http://www.semtalk.com</site>
+    <category>DAML Graph Visualization</category>
+    <project rdf:resource="#DAML"/>
+  </Tool>
+  <Tool xmlns="" rdf:ID="ArticulationService">
+    <name>Articulation Service</name>
+    <description>builds an asymmetric mapping between two source ontologies.  The mapping is expressed using an articulation ontology.</description>
+    <site>http://codip.grci.com/Tools/ArtiServicePage.html</site>
+    <interface>www</interface>
+    <category>Ontology Translation</category>
+    <project rdf:resource="#DAML"/>
+  </Tool>
+  <Tool xmlns="" rdf:ID="RIC">
+    <name>RDF Instance Creator (RIC)</name>
+    <description>RDF Instance creation from ontologies, from MINDSWAP</description>
+    <site>http://www.mindswap.org/</site>
+    <sourceCode>open</sourceCode>
+    <interface>java_api</interface>
+    <interface>www</interface>
+    <category>RDF/DAML Authoring</category>
+    <project rdf:resource="#DAML"/>
+  </Tool>
+  <Tool xmlns="" rdf:ID="SMORE">
+    <name>Semantic Markup, Ontology and RDF Editor (SMORE)</name>
+    <description>Web Page Markup Tool from Mindswap</description>
+    <site>http://iama.rrecktek.com/~aditkal/editor.html</site>
+    <sourceCode>open</sourceCode>
+    <interface>java_api</interface>
+    <interface>www</interface>
+    <category>DAML Markup tool</category>
+    <project rdf:resource="#DAML"/>
+  </Tool>
+  <Tool xmlns="" rdf:ID="ConvertToRDF">
+    <name>Excel to RDF converter</name>
+    <description>Converts Excel (or other tab separated data) to DAML using a simple mapping ontology</description>
+    <site>http://www.mindswap.org/</site>
+    <sourceCode>open</sourceCode>
+    <interface>java_api</interface>
+    <interface>www</interface>
+    <category>Import</category>
+    <project rdf:resource="#DAML"/>
+  </Tool>
+  <Tool xmlns="" rdf:ID="RdfWebScraper">
+    <name>RDF Web Scraper</name>
+    <description>Scrapes DAML from HTML web pages (wrapper creator)</description>
+    <site>http://iama.rrecktek.com/~aditkal/rdf.html</site>
+    <sourceCode>open</sourceCode>
+    <interface>java_api</interface>
+    <interface>www</interface>
+    <category>Import</category>
+    <project rdf:resource="#DAML"/>
+  </Tool>
+  <Tool xmlns="" rdf:ID="owlconverter">
+    <name>OWL Converter</name>
+    <description>Perl script to convert DAML+OIL ontologies to OWL.</description>
+    <site>http://www.mindswap.org/2002/owl.html</site>
+    <sourceCode>open</sourceCode>
+    <interface>command</interface>
+    <category>Export</category>
+    <project rdf:resource="#DAML"/>
+  </Tool>
+  <Tool xmlns="" rdf:ID="SweetJess">
+    <name>SweetJess</name>
+    <description>The Semantic Web Enabling Technologies for Jess (SweetJess) supports DamlRuleML inference using Jess</description>
+    <site>http://userpages.umbc.edu/~mgandh1/</site>
+    <interface>java_api</interface>
+    <uses rdf:resource="#JESS"/>
+    <uses rdf:resource="#SiRPAC"/>
+    <uses rdf:resource="#DAMLJessKB"/>
+    <uses rdf:resource="#commonrules"/>
+    <category>Inference Engine</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="rdftp">
+    <name>RDF Transport Protocol (rdftp)</name>
+    <description>an HTTP-based RDF server that supports query and update operations on RDF content stored in a relational database</description>
+    <site>http://www.semanticweb.gr/rdftp/</site>
+    <interface>www</interface>
+  </Tool>
+  <Tool xmlns="" rdf:ID="TKS">
+    <name>Tucana KnowledgeStore (TKS)</name>
+    <description>scalable, distributed, transaction-safe, 
+directed-graph database optimized for the management of RDF metadata</description>
+    <site>http://www.pisoftware.com/products/TKS/index.html</site>
+    <interface>command</interface>
+    <interface>www</interface>
+    <interface>java_api</interface>
+    <category>Persistence</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="ParkaSW">
+    <name>ParkaSW</name>
+    <description>scalable backend technology for the storage and retrieval of RDF graphs</description>
+    <site>http://projects.semwebcentral.org/projects/parkasw/</site>
+    <sourceCode>open</sourceCode>
+    <category>Persistence</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="Joseki">
+    <name>Joseki</name>
+    <description>an experimental NetAPI for Jena, supporting the remote query and update of RDF models</description>
+    <site>http://www-uk.hpl.hp.com/people/afs/Joseki/</site>
+    <sourceCode>open</sourceCode>
+    <interface>www</interface>
+    <interface>java_api</interface>
+  </Tool>
+  <Tool xmlns="" rdf:ID="JGraph">
+    <name>JGraph</name>
+    <description>open source graph component for Java</description>
+    <site>http://www.jgraph.com/</site>
+    <sourceCode>lgpl</sourceCode>
+    <interface>java_api</interface>
+    <category>Graph Visualization</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="Otter">
+    <name>Otter</name>
+    <description>First-Order Logic (FOL) Deductive Reasoning System</description>
+    <site>http://www-unix.mcs.anl.gov/AR/otter/</site>
+    <sourceCode>open</sourceCode>
+    <category>Inference Engine</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="SNARK">
+    <name>SRI's New Automated Reasoning Kit (SNARK)</name>
+    <description>an automated theorem-proving program, in Common Lisp, focusing on resolution and paramodulation</description>
+    <site>http://www.ai.sri.com/~stickel/snark.html</site>
+    <sourceCode>open</sourceCode>
+    <category>Inference Engine</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="RDFLib">
+    <name>RDFLib</name>
+    <description>RDFLib is a Python library containing an RDF triple store and an RDF/XML parser/serializer.</description>
+    <site>http://rdflib.net</site>
+    <interface>python_api</interface>
+    <category>RDF Parser</category>
+    <category>Persistence</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="VisualRDF">
+    <name>RDF Model Browser</name>
+    <description>software platform for interactive visualization of RDF models, supporting several different views</description>
+    <site>http://visualrdf.sourceforge.net</site>
+    <sourceCode>gpl</sourceCode>
+    <interface>www</interface>
+    <category>DAML Graph Visualization</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="BrownSauce">
+    <name>BrownSauce</name>
+    <description>generic RDF browser</description>
+    <site>http://brownsauce.sourceforge.net/</site>
+    <sourceCode>open</sourceCode>
+    <interface>www</interface>
+    <category>DAML Viewer</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="DAMLdotnet">
+    <name>DAML dotnetAPI</name>
+    <description>a DAML and RDF API for the Microsoft .NET framework</description>
+    <site>http://www.daml.org/2002/10/dotnetAPI/</site>
+    <sourceCode>open</sourceCode>
+    <interface>cs_api</interface>
+    <category>RDF Parser</category>
+    <project rdf:resource="#DAML"/>
+  </Tool>
+  <Tool xmlns="" rdf:ID="Drive">
+    <name>Drive</name>
+    <description>an RDF Parser for C#</description>
+    <site>http://www.DriveRDF.org/</site>
+    <sourceCode>lgpl</sourceCode>
+    <interface>cs_api</interface>
+    <category>RDF Parser</category>
+    <project rdf:resource="#DAML"/>
+  </Tool>
+  <Tool xmlns="" rdf:ID="bibtex2rdf">
+    <name>BibTeX-2-RDF Translator</name>
+    <description>translates structured data contained in BibTeX bibliographies into the Ontoweb portal RDF ontology</description>
+    <site>http://www.cs.vu.nl/~mcaklein/bib2rdf/</site>
+    <interface>www</interface>
+  </Tool>
+  <Tool xmlns="" rdf:ID="sunxsd">
+    <name>Sun XML Datatypes Library</name>
+    <description>The Sun XML Datatypes Library, Sun's Java[tm] technology implementation of XML Schema Part 2, is intended for use with applications that incorporate XML Schema Part 2.</description>
+    <site>http://wwws.sun.com/software/xml/developers/xsdlib/</site>
+    <interface>java_api</interface>
+    <category>XML Schema API</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="adobesvg">
+    <name>Adobe SVG Viewer</name>
+    <description>free downloadable browser plugin to view Scalable Vector Graphics (SVG)</description>
+    <site>http://www.adobe.com/svg/</site>
+    <price>free</price>
+  </Tool>
+  <Tool xmlns="" rdf:ID="cougaar">
+    <name>Cognitive Agent Architecture (Cougaar)</name>
+    <description>Java-based architecture for the construction of large-scale distributed agent-based applications</description>
+    <site>http://www.cougaar.org</site>
+    <sourceCode>open</sourceCode>
+    <interface>java_api</interface>
+    <category>Agent Infrastructure</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="lucene">
+    <name>Lucene</name>
+    <description>high-performance, full-featured text search engine written entirely in Java</description>
+    <site>http://jakarta.apache.org/lucene/</site>
+    <sourceCode>apache</sourceCode>
+    <interface>java_api</interface>
+    <category>Search Engine</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="Trellis">
+    <name>Trellis</name>
+    <description>an interactive environment that allows users to add their observations, viewpoints, and conclusions as they analyze information by making semantic annotations to documents and other on-line resources.  Annotations can be published as XML, RDF, or DAML+OIL.</description>
+    <site>http://www.isi.edu/ikcap/trellis/</site>
+    <sourceCode>open</sourceCode>
+    <interface>www</interface>
+    <category>Annotation</category>
+    <project rdf:resource="#DAML"/>
+  </Tool>
+  <Tool xmlns="" rdf:ID="threestore">
+    <name>3store</name>
+    <description>..., supports RDQL with subclasses and subproperties</description>
+    <site>http://sourceforge.net/projects/threestore/</site>
+    <sourceCode>gpl</sourceCode>
+    <interface>c_api</interface>
+    <interface>www</interface>
+    <category>Persistence</category>
+    <category>Query</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="objectviewer">
+    <name>Object Viewer</name>
+    <description>ASP.NET custom control for graphically visualizing DAML instance data</description>
+    <site>http://projects.semwebcentral.org/projects/objectviewer/</site>
+    <interface>www</interface>
+    <interface>cs_api</interface>
+    <category>DAML Graph Visualization</category>
+    <project rdf:resource="#DAML"/>
+  </Tool>
+  <Tool xmlns="" rdf:ID="floom">
+    <name>Fenfire Loom</name>
+    <description>a focus+context RDF graph browser</description>
+    <site>https://savannah.nongnu.org/files/?group=fenfire</site>
+    <sourceCode>lgpl</sourceCode>
+    <category>DAML Graph Visualization</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="vowlidator">
+    <name>OWL Validator</name>
+    <description>The OWL Validator is a tool to check OWL markup for problems beyond simple syntax errors.</description>
+    <site>http://projects.semwebcentral.org/projects/vowlidator/</site>
+    <interface>www</interface>
+    <interface>java_api</interface>
+    <category>OWL Validator</category>
+    <project rdf:resource="#DAML"/>
+  </Tool>
+  <Tool xmlns="" rdf:ID="species">
+    <name>OWL Ontology Validator</name>
+    <description>a servlet that validates an OWL ontology against a selected species (OWL Lite, OWL DL, or OWL Full)</description>
+    <site>http://phoebus.cs.man.ac.uk:9999/OWL/Validator</site>
+    <interface>www</interface>
+    <uses rdf:resource="#WonderWebOWLAPI"/>
+    <category>OWL Validator</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="jenaLocation">
+    <name>Jena Location Modification</name>
+    <description>A modified version of Jena 1.6.1 that stores parser location information (source and line number) with statements.</description>
+    <site>http://www.daml.org/2003/03/jena-location/</site>
+    <sourceCode>open</sourceCode>
+    <interface>java_api</interface>
+    <uses rdf:resource="#Jena"/>
+    <category>RDF Parser</category>
+    <project rdf:resource="#DAML"/>
+  </Tool>
+  <Tool xmlns="" rdf:ID="jenaSourceModel">
+    <name>Source and Dynamic Loading Extensions for Jena</name>
+    <description>Two extensions to the RDF ModelMem in Jena 1.6.1 that track source information for statements and allows dynamic loading of referenced namespaces on an as referenced basis.</description>
+    <site>http://www.daml.org/2003/03/jena-sourcemodel/</site>
+    <sourceCode>open</sourceCode>
+    <interface>java_api</interface>
+    <uses rdf:resource="#Jena"/>
+    <category>RDF Parser</category>
+    <project rdf:resource="#DAML"/>
+  </Tool>
+  <Tool xmlns="" rdf:ID="Raptor">
+    <name>Raptor</name>
+    <description>Raptor is a C library that provides parsers for RDF/XML and N-Triples.  It was designed to work closely with the Redland RDF library (RDF Parser Toolkit for Redland - Raptor) but is fully separate.</description>
+    <site>http://www.redland.opensource.ac.uk/raptor/</site>
+    <sourceCode>open</sourceCode>
+    <interface>c_api</interface>
+    <category>RDF Parser</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="rdfgateway">
+    <name>RDF Gateway</name>
+    <description>RDF Gateway is a platform designed from the ground up for the Semantic Web. It's an application server, a web server, and a deductive RDF database server all in one.</description>
+    <site>http://www.intellidimension.com/</site>
+    <category>Persistence</category>
+    <category>Query</category>
+    <category>Inference Engine</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="scutter">
+    <name>scutter</name>
+    <description>a multithreaded RDF crawler that stores its content in any of Jena's backend stores (in-memory, Berkeley DB, mysql, etc.</description>
+    <site>http://lists.w3.org/Archives/Public/www-rdf-interest/2003Apr/0222.html</site>
+    <uses rdf:resource="#Jena"/>
+    <category>DAML Crawler</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="drools">
+    <name>drools</name>
+    <description>dynamic rules for java (drools) is an augmented implementation of Forgy's Rete algorithm tailored for the object-oriented language of Java</description>
+    <site>http://www.drools.org</site>
+    <sourceCode>open</sourceCode>
+    <interface>java_api</interface>
+    <category>Inference Engine</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="unicorn">
+    <name>Unicorn System</name>
+    <description>The Unicorn system provides a comprehensive integrated platform for data life cycle management using data semantics.</description>
+    <site>http://www.unicorn.com</site>
+    <interface>gui</interface>
+    <interface>java_api</interface>
+    <category>Ontology Editor</category>
+    <category>RDBMS Mapping</category>
+    <category>Import</category>
+    <project rdf:resource="#DAML"/>
+  </Tool>
+  <Tool xmlns="" rdf:ID="damlplugin">
+    <name>DAML+OIL Plugin for Protege 2000</name>
+    <description>a plugin for Protege 2000 that allows users to read, edit, and
+generate DAML+OIL ontologies</description>
+    <site>http://www.ai.sri.com/daml/DAML+OIL-plugin/</site>
+    <uses rdf:resource="#Protege"/>
+    <category>Ontology Editor</category>
+    <project rdf:resource="#DAML"/>
+  </Tool>
+  <Tool xmlns="" rdf:ID="Medius">
+    <name>Medius Visual Ontology Modeler</name>
+    <description>a UML-based ontology modeling tool, an add-in to Rational Rose Enterprise Edition, that can export DAML</description>
+    <site>http://www.sandsoft.com/products.html</site>
+    <uses rdf:resource="#rose"/>
+    <category>Ontology Editor</category>
+    <project rdf:resource="#DAML"/>
+  </Tool>
+  <Tool xmlns="" rdf:ID="owl-genie">
+    <name>OWL Genie</name>
+    <description>OWL Genie is a package of XSLT named-templates intended to provide a convenient way for XSLT applications to retrieve information from OWL ontologies.</description>
+    <site>http://lists.w3.org/Archives/Public/www-rdf-interest/2003May/0009.html</site>
+    <interface>xslt</interface>
+    <project rdf:resource="#DAML"/>
+  </Tool>
+  <Tool xmlns="" rdf:ID="MnM">
+    <name>MnM</name>
+    <description/>
+    <site>http://kmi.open.ac.uk/projects/akt/MnM</site>
+    <interface>gui</interface>
+    <category>Annotation</category>
+    <project rdf:resource="#DAML"/>
+  </Tool>
+  <Tool xmlns="" rdf:ID="RACER">
+    <name>RACER</name>
+    <description>Renamed ABox and Concept Expression Reasoner (RACER) ...</description>
+    <site>http://www.fh-wedel.de/~mo/racer/index.html</site>
+    <interface>gui</interface>
+    <interface>java_api</interface>
+    <interface>cpp_api</interface>
+    <interface>lisp_api</interface>
+    <uses rdf:resource="#Wilbur"/>
+    <category>Inference Engine</category>
+    <project rdf:resource="#DAML"/>
+  </Tool>
+  <Tool xmlns="" rdf:ID="spectacle">
+    <name>Spectacle:Server</name>
+    <description>a 100% Java web component (to be deployed in
+a web app server like Tomcat/JBoss/SunOne/WebSphere) which offers
+high-performance, scalable guided exploration on sets of structured or
+unstructured data.</description>
+    <site>http://spectacle.aidministrator.nl</site>
+    <interface>www</interface>
+    <interface>java_api</interface>
+    <category>DAML Browser</category>
+    <category>DAML Viewer</category>
+    <category>Application Server</category>
+    <project rdf:resource="#DAML"/>
+  </Tool>
+  <Tool xmlns="" rdf:ID="flora2">
+    <name>FLORA-2</name>
+    <description>FLORA-2 is a sophisticated object-oriented knowledge base language and application development platform.   The programming language of FLORA-2 is a dialect of F-logic with numerous extensions, including meta-programming in the style of HiLog and logical updates in the style of Transaction Logic.</description>
+    <site>http://flora.sourceforge.net/</site>
+    <sourceCode>lgpl</sourceCode>
+    <interface>command</interface>
+    <uses rdf:resource="#XSB"/>
+    <category>Inference Engine</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="Water">
+    <name>Water</name>
+    <description>Water is a dynamic language that unites the worlds of objects and Web Services in an elegant way, using ConciseXML syntax.</description>
+    <site>http://www.waterlang.org</site>
+    <category>Programming Language</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="PowerLoom">
+    <name>PowerLoom</name>
+    <description>PowerLoom is the successor to the Loom knowledge representation system.  It provides a language and environment for constructing intelligent applications.  PowerLoom uses a fully expressive, logic-based representation language (a variant of KIF), and it uses a natural-deduction-style backward and forward chainer as its inference engine.</description>
+    <site>http://www.isi.edu/isd/LOOM/PowerLoom/</site>
+    <interface>command</interface>
+    <interface>java_api</interface>
+    <interface>lisp_api</interface>
+    <interface>cpp_api</interface>
+    <category>Inference Engine</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="TouchGraph">
+    <name>TouchGraph</name>
+    <description>TouchGraph is a set of interfaces for Graph Visualization using spring-layout and focus+context techniques.</description>
+    <site>http://www.touchgraph.com</site>
+    <sourceCode>apache</sourceCode>
+    <interface>java_api</interface>
+    <category>Graph Visualization</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="JViews">
+    <name>JViews</name>
+    <description/>
+    <site>http://www.ilog.com/products/jviews/</site>
+    <interface>java_api</interface>
+    <category>Graph Visualization</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="clips">
+    <name>CLIPS</name>
+    <description/>
+    <site>http://www.ghg.net/clips/CLIPS.html</site>
+    <sourceCode>publicdomain</sourceCode>
+    <interface>c_api</interface>
+    <category>Inference Engine</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="eclipse">
+    <name>eclipse</name>
+    <description>extensible Interactive Development Environment platforma</description>
+    <site>http://www.eclipse.org</site>
+    <sourceCode>open</sourceCode>
+    <interface>gui</interface>
+    <category>Interactive Development Environment</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="Jikes">
+    <name>Jikes</name>
+    <description>open source Java compiler</description>
+    <site>http://www.ibm.com/developerworks/oss/jikes/</site>
+    <sourceCode>open</sourceCode>
+    <category>Compiler</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="ChaeronGPS">
+    <name>Chaeron Global Positioning System (GPS) Library</name>
+    <description>Java interface to GPS units, including a GUI and the ability to save results in an XML format</description>
+    <site>http://www.chaeron.com/gps.html#JavaLibrary</site>
+    <sourceCode>gpl</sourceCode>
+    <interface>java_api</interface>
+    <interface>gui</interface>
+    <category>GPS API</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="Uml2Daml">
+    <name>Uml2Daml Converter</name>
+    <description>a GUI application for automated transformation of UML 1.4 class diagrams (in XMI 1.1) in DAML+OIL or RDFS ontologies</description>
+    <site>http://freshmeat.net/projects/ju2d/</site>
+    <sourceCode>gpl</sourceCode>
+    <interface>gui</interface>
+    <category>Import</category>
+    <project rdf:resource="#DAML"/>
+  </Tool>
+  <Tool xmlns="" rdf:ID="RAP">
+    <name>RDF API for PHP (RAP)</name>
+    <description>RDF API for PHP is a software package for parsing, searching, manipulating and serializing RDF models.</description>
+    <site>http://www.wiwiss.fu-berlin.de/suhl/bizer/rdfapi/</site>
+    <sourceCode>gpl</sourceCode>
+    <interface>php_api</interface>
+    <category>RDF Parser</category>
+    <category>RDF Query</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="InferEd">
+    <name>InferEd</name>
+    <description>RDF editor with inference</description>
+    <site>http://www.intellidimension.com/pages/site/products/infered/default.rsp</site>
+    <interface>gui</interface>
+    <category>RDF Authoring</category>
+    <category>Inference Engine</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="Swish">
+    <name>Semantic Web Inference using Haskell (Swish)</name>
+    <description>a software package being developed to conduct experiments in using the programming language Haskell as a basis for performing inference on Semantic Web data</description>
+    <site>http://www.ninebynine.org/Software/swish-0.1.html</site>
+  </Tool>
+  <Tool xmlns="" rdf:ID="Vampire">
+    <name>Vampire</name>
+    <description>an experimental theorem prover for first-order classical logic</description>
+    <site>http://www.cs.man.ac.uk/~riazanoa/Vampire/</site>
+    <category>Inference Engine</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="owlplugin">
+    <name>OWL Plugin for Protege 2000</name>
+    <description>a plugin for Protege 2000 that allows users to read, edit, and
+generate OWL ontologies</description>
+    <site>http://protege.stanford.edu/plugins/owl/</site>
+    <interface>gui</interface>
+    <uses rdf:resource="#Protege"/>
+    <uses rdf:resource="#Jena"/>
+    <category>Ontology Editor</category>
+    <project rdf:resource="#DAML"/>
+  </Tool>
+  <Tool xmlns="" rdf:ID="Rio">
+    <name>RDF I/O (Rio)</name>
+    <description>fast and compact parsers and serializers for RDF/XML, N-Triples, and N3, originally developed for Sesame</description>
+    <site>http://sourceforge.net/projects/sesame/</site>
+    <sourceCode>open</sourceCode>
+    <interface>java_api</interface>
+    <category>RDF Parser</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="wsdl2damls">
+    <name>WSDL to DAML-S Converter</name>
+    <description/>
+    <site>http://www.daml.ri.cmu.edu/wsdl2damls/</site>
+    <project rdf:resource="#DAML"/>
+  </Tool>
+  <Tool xmlns="" rdf:ID="dbview">
+    <name>dbview</name>
+    <description>export an SQL database as RDF over HTTP</description>
+    <site>http://www.w3.org/2000/10/swap/dbork/dbview.py</site>
+    <sourceCode>open</sourceCode>
+    <category>Database Interface</category>
+    <project rdf:resource="#DAML"/>
+  </Tool>
+  <Tool xmlns="" rdf:ID="Surnia">
+    <name>Surnia</name>
+    <description>a reasoner for OWL Full based on the first-order theorem prover Otter</description>
+    <site>http://www.w3.org/2003/08/surnia/</site>
+    <uses rdf:resource="#Otter"/>
+    <category>Inference Engine</category>
+    <project rdf:resource="#DAML"/>
+  </Tool>
+  <Tool xmlns="" rdf:ID="Pellet">
+    <name>Pellet</name>
+    <description>an OWL DL reasoner based on the tableaux algorithms developed for expressive Description Logics</description>
+    <site>http://www.mindswap.org/2003/pellet/</site>
+    <category>Inference Engine</category>
+    <project rdf:resource="#DAML"/>
+  </Tool>
+  <Tool xmlns="" rdf:ID="rdftwig">
+    <name>RDF Twig</name>
+    <description>RDF Twig is a set of XSLT extension functions for Saxon and Xalan to provide access to RDF graphs stored in the Jena repository</description>
+    <site>http://rdftwig.sourceforge.net/</site>
+    <uses rdf:resource="#Jena"/>
+    <uses rdf:resource="#xalan"/>
+    <category>RDF Transformation</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="CmapTools">
+    <name>IHMC Concept Mapping Software</name>
+    <description>empowers users to construct, navigate, share, and criticize knowledge models represented as Concept Maps</description>
+    <site>http://cmap.coginst.uwf.edu/</site>
+    <interface>gui</interface>
+    <category>Graph Visualization</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="ont_mapping">
+    <name>Lexicon-Based Ontology Mapping Tool</name>
+    <description>lexicon-based ontology mapping tool</description>
+    <site>http://projects.teknowledge.com/DAML</site>
+    <sourceCode>gpl</sourceCode>
+    <interface>prolog_api</interface>
+    <category>Ontology Translation</category>
+    <project rdf:resource="#DAML"/>
+  </Tool>
+  <Tool xmlns="" rdf:ID="SQIRE">
+    <name>Semantic Query Interface in Restricted English (SQIRE)</name>
+    <description>a restricted English query interface for Semantic Search</description>
+    <site>http://projects.teknowledge.com/DAML</site>
+    <interface>www</interface>
+    <uses rdf:resource="#dsss"/>
+    <category>Search Engine</category>
+    <project rdf:resource="#DAML"/>
+  </Tool>
+  <Tool xmlns="" rdf:ID="Python">
+    <name>Python</name>
+    <description>an object-oriented interpreted programming language</description>
+    <site>http://www.python.org</site>
+    <category>Programming Language</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="X_Smiles">
+    <name>X-Smiles</name>
+    <description>Java-based XML browser, supporting XForms and other specifications</description>
+    <site>http://www.x-smiles.org/</site>
+    <sourceCode>open</sourceCode>
+    <interface>gui</interface>
+  </Tool>
+  <Tool xmlns="" rdf:ID="Samizdat">
+    <name>Samizdat</name>
+    <description>generic RDF-based engine for building collaboration and
+open publishing web sites</description>
+    <site>http://www.nongnu.org/samizdat/</site>
+    <sourceCode>gpl</sourceCode>
+    <interface>www</interface>
+  </Tool>
+  <Tool xmlns="" rdf:ID="Galax">
+    <name>Galax</name>
+    <description>an open-source implementation of XQuery 1.0</description>
+    <site>http://db.bell-labs.com/galax/</site>
+    <sourceCode>open</sourceCode>
+  </Tool>
+  <Tool xmlns="" rdf:ID="OWLP">
+    <name>OWLP</name>
+    <description>a parser for OWL Lite and OWL DL, using the Galax XQuery implementation.  OWLP includes an RDF parser.</description>
+    <site>http://www-db.research.bell-labs.com/user/pfps/owlp/</site>
+    <sourceCode>open</sourceCode>
+    <interface>command</interface>
+    <uses rdf:resource="#Galax"/>
+    <category>OWL Parser</category>
+    <category>RDF Parser</category>
+    <project rdf:resource="#DAML"/>
+  </Tool>
+  <Tool xmlns="" rdf:ID="fowl">
+    <name>F-OWL</name>
+    <description>a rule based inference engine implemented using the object-oriented Flora-2 language in XSB</description>
+    <site>http//fowl.sourceforge.net</site>
+    <sourceCode>open</sourceCode>
+    <interface>command</interface>
+    <interface>java_api</interface>
+    <uses rdf:resource="#flora2"/>
+    <category>Inference Engine</category>
+    <project rdf:resource="#DAML"/>
+  </Tool>
+  <Tool xmlns="" rdf:ID="d2rmap">
+    <name>D2R MAP</name>
+    <description>a declarative language to describe mappings between relational
+database schemata and RDF-S/OWL ontologies. The mappings can be used by a
+D2R processor to export data from a relational database into RDF.</description>
+    <site>http://www.wiwiss.fu-berlin.de/suhl/bizer/d2rmap/D2Rmap.htm</site>
+    <uses rdf:resource="#Jena"/>
+    <category>RDBMS Mapping</category>
+    <project rdf:resource="#DAML"/>
+  </Tool>
+  <Tool xmlns="" rdf:ID="WonderWebOWLAPI">
+    <name>OWL API</name>
+    <description>provides a high-level view of an OWL ontology based on the OWL Abstract Syntax</description>
+    <site>http://wonderweb.man.ac.uk/owl/</site>
+    <interface>java_api</interface>
+    <category>OWL Parser</category>
+    <project rdf:resource="#DAML"/>
+  </Tool>
+  <Tool xmlns="" rdf:ID="Fabl">
+    <name>Fabl</name>
+    <description>Fabl is a native programming language for the Semantic Web.</description>
+    <site>http://fabl.net</site>
+    <category>Programming Language</category>
+    <project rdf:resource="#DAML"/>
+  </Tool>
+  <Tool xmlns="" rdf:ID="Metalog">
+    <name>Metalog</name>
+    <description>a next-generation reasoning system, adding a query/logical layer on top of RDF</description>
+    <site>http://www.w3.org/RDF/Metalog/</site>
+    <sourceCode>open</sourceCode>
+    <category>Inference Engine</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="OWLEngine">
+    <name>OWLEngine</name>
+    <description>source code and instructions to load OWL ontologies and annotations into a JESS knowledge base</description>
+    <site>http://mycampus.sadehlab.cs.cmu.edu/public_pages/OWLEngine.html</site>
+    <uses rdf:resource="#JESS"/>
+    <category>Inference Engine</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="TreeHugger">
+    <name>TreeHugger</name>
+    <description>an attempt to use XPath and XSLT on RDF graphs, by making the RDF graph look like an ideal RDF/XML serialization</description>
+    <site>http://rdfweb.org/people/damian/treehugger/</site>
+    <category>RDF Transformation</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="Kowari">
+    <name>Kowari</name>
+    <description>...</description>
+    <site>http://www.w3.org/mid/48357.202.76.156.27.1067121021.squirrel@kernigan.pisoftware.com</site>
+    <interface>java_api</interface>
+    <uses rdf:resource="#Jena"/>
+    <uses rdf:resource="#lucene"/>
+    <category>Persistence</category>
+    <category>Query</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="owlemacsmode">
+    <name>OWL Emacs Mode</name>
+    <description>...</description>
+    <site>http://projects.semwebcentral.org/projects/owl-mode/</site>
+    <uses rdf:resource="#emacs"/>
+    <uses rdf:resource="#xemacs"/>
+    <category>OWL Editor</category>
+    <project rdf:resource="#DAML"/>
+  </Tool>
+  <Tool xmlns="" rdf:ID="Bossam">
+    <name>Bossam - A Web-Oriented Rule Processor</name>
+    <description>a forward-chaining production rule system with extended knowledge representation power and web-oriented features</description>
+    <site>http://machine-knows.etri.re.kr/bossam/</site>
+    <interface>java_api</interface>
+    <category>Inference Engine</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="SchemaWeb">
+    <name>SchemaWeb</name>
+    <description>a repository for RDF schemas expressed in the RDFS, OWL, and DAML+OIL schema languages</description>
+    <site>http://www.schemaweb.info/</site>
+    <interface>www</interface>
+    <interface>soap</interface>
+    <uses rdf:resource="#VicSoft.Rdf"/>
+    <category>Ontology Library</category>
+    <project rdf:resource="#DAML"/>
+  </Tool>
+  <Tool xmlns="" rdf:ID="SNOBASE">
+    <name>Semantic Network Ontology Base (SNOBASE)</name>
+    <description>The IBM Ontology Management System (also known as SNOBASE, for Semantic Network Ontology Base) is a framework for loading ontologies from files and via the Internet and for locally creating, modifying, querying, and storing ontologies.</description>
+    <site>http://www.alphaworks.ibm.com/tech/snobase/</site>
+    <category>Ontology Management System</category>
+    <project rdf:resource="#DAML"/>
+  </Tool>
+  <Tool xmlns="" rdf:ID="RDF-S3">
+    <name>RDF-Source related Storage System (RDF-S3)</name>
+    <description>The RDF-Source related Storage System (RDF-S3) is a Java application for storing RDF statements into SQL databases using a schema specific storage approach.</description>
+    <site>http://www.dbis.informatik.uni-frankfurt.de/~tolle/RDF/RDFS3/index.html</site>
+    <category>Persistence</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="OntoBuilder">
+    <name>OntoBuilder</name>
+    <description>supports the extraction of ontologies from Web search interfaces</description>
+    <site>http://iew3.technion.ac.il/OntoBuilder/</site>
+  </Tool>
+  <Tool xmlns="" rdf:ID="RX4RDF">
+    <name>RX4RDF</name>
+    <description>Rx4RDF is a specification and reference implementation for querying, transforming and updating W3C's RDF by specifying a deterministic mapping of the RDF model to the XML data model defined by XPath. Rx4RDF shields developers from the complexity of RDF by enabling you to use familar XML technologies like XPath, XSLT and XUpdate. We call their RDF equivalents RxPath, RxSLT, and RxUpdate respectively.</description>
+    <site>http://rx4rdf.sourceforge.net</site>
+    <category>RDF Transformation</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="Racoon">
+    <name>Racoon</name>
+    <description>Racoon is a simple application server that uses an RDF model for its data store, roughly analogous to RDF as Apache Cocoon is to XML.</description>
+    <site>http://rx4rdf.liminalzone.org/Racoon</site>
+    <uses rdf:resource="#RX4RDF"/>
+    <category>Application Server</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="Rhizome">
+    <name>Rhizome</name>
+    <description>Rhizome is a simple content management and delivery system that is similar to a Wiki except that you can author arbitrary XML and RDF metadata and the structure of the website is stored as RDF.</description>
+    <site>http://rx4rdf.liminalzone.org/Rhizome</site>
+    <uses rdf:resource="#Racoon"/>
+  </Tool>
+  <Tool xmlns="" rdf:ID="eRQL">
+    <name>Easy RDF Query Language (eRQL)</name>
+    <description>Easy RDF Query Language (eRQL) is an intuitive, easy to use query language for RDF based upon RQL</description>
+    <site>http://www.dbis.informatik.uni-frankfurt.de/~tolle/RDF/eRQL/index.html</site>
+    <category>RDF Query</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="MR3">
+    <name>MR3</name>
+    <description>an editing tool for RDF contents</description>
+    <site>http://mmm.semanticweb.org/mr3/</site>
+    <interface>gui</interface>
+    <category>RDF Editor</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="ezOWL">
+    <name>ezOWL</name>
+    <description>a diagram-based ontology editor for OWL implemented as a Protege plugin</description>
+    <site>http://iweb.etri.re.kr/ezowl/</site>
+    <interface>gui</interface>
+    <uses rdf:resource="#Protege"/>
+    <category>Ontology Editor</category>
+    <project rdf:resource="#DAML"/>
+  </Tool>
+  <Tool xmlns="" rdf:ID="RDFX">
+    <name>RDFX:  A Resource Description Framework Explorer</name>
+    <description>an Eclipse plugin for browsing information within the Universal Information Service Browser</description>
+    <site>http://www.rdfx.org</site>
+    <uses rdf:resource="#eclipse"/>
+    <category>RDF Browser</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="Omnigator">
+    <name>Omnigator 007</name>
+    <description>free Topic Map browser and RDF converter</description>
+    <site>http://www.ontopia.net/download/freedownload.html</site>
+    <category>Topic Map Browser</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="Versa">
+    <name>Versa</name>
+    <description>RDF query language inspired by XPath</description>
+    <site>http://uche.ogbuji.net/tech/rdf/versa/</site>
+    <category>RDF Query</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="VicSoft.Rdf">
+    <name>VicSoft.Rdf Parser</name>
+    <description/>
+    <site>http://www.schemaweb.info/parser/Parser.aspx</site>
+    <sourceCode>open</sourceCode>
+    <interface>cs_api</interface>
+    <category>RDF Parser</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="SWOOP">
+    <name>Semantic Web Ontology Overview and Perusal (SWOOP)</name>
+    <description>a simple and elegant utility to browse OWL ontologies in a hyperlinked thesaurus-style format</description>
+    <site>http://www.mindswap.org/~aditkal/swoop.shtml</site>
+    <category>OWL Browser</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="vim">
+    <name>vim</name>
+    <description>a highly configurable text editor based on the UNIX vi editor</description>
+    <site>http://www.vim.org</site>
+    <interface>gui</interface>
+    <category>Text Editor</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="owlvim">
+    <name>OWL Filetype Plugin for VIM</name>
+    <description>provides menu-accessible functions for autogenerating common OWL constructs</description>
+    <site>http://projects.semwebcentral.org/projects/owlvim/</site>
+    <interface>gui</interface>
+    <uses rdf:resource="#vim"/>
+    <category>OWL Editor</category>
+    <project rdf:resource="#DAML"/>
+  </Tool>
+  <Tool xmlns="" rdf:ID="RDQLPlus">
+    <name>RDQLPlus</name>
+    <description>a database monitor-type application featuring a zoomable user interface</description>
+    <site>http://rdqlplus.sourceforge.net/</site>
+    <sourceCode>mozilla</sourceCode>
+    <interface>gui</interface>
+  </Tool>
+  <Tool xmlns="" rdf:ID="SWA">
+    <name>Semantic Web Author</name>
+    <description>a Validating Parser, Editor, and Web Development Environment for XML, RDF, and OWL</description>
+    <site>http://www.web-iq.com/xmlrdfdownload.htm</site>
+    <sourceCode>lgpl</sourceCode>
+    <interface>gui</interface>
+  </Tool>
+  <Tool xmlns="" rdf:ID="D2RQ">
+    <name>D2RQ</name>
+    <description>a declarative mapping language for treating non-RDF databases as virtual RDF graphs within the Jena toolkit</description>
+    <site>http://www.wiwiss.fu-berlin.de/suhl/bizer/d2rq/</site>
+    <sourceCode>gpl</sourceCode>
+    <uses rdf:resource="#Jena"/>
+    <category>RDBMS Mapping</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="Hoolet">
+    <name>Hoolet</name>
+    <description>an OWL-DL reasoner using a first order theorem prover, with support for SWRL</description>
+    <site>http://owl.man.ac.uk/hoolet/</site>
+    <uses rdf:resource="#WonderWebOWLAPI"/>
+    <uses rdf:resource="#Vampire"/>
+    <category>Inference Engine</category>
+  </Tool>
+  <Tool xmlns="" rdf:ID="SemWebsite">
+    <name>SemWebsite</name>
+    <description>custom JSP tags and functions for using Semantic Web ontologies (RDF/OWL) in JSP pages</description>
+    <site>http://semweb.krasu.ru/SemWebsite/</site>
+  </Tool>
+</rdf:RDF>
