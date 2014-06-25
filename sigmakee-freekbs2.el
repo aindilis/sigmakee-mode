@@ -13,8 +13,8 @@
      original-string t))
    (read-dequestionmarked-string (read dequestionmarked-string))
    (freekbs2ified-read-dequestionmarked-string
-    (sigmakee-convert-to-freekbs2-format read-dequestionmarked-string))
-   )
+    (sigmakee-convert-from-read-dequestionmarked-string-to-freekbs2-list 
+     read-dequestionmarked-string)))
   (setq freekbs2-stack freekbs2ified-read-dequestionmarked-string)
   (freekbs2-ring-add-result item)))
 
