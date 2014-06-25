@@ -1,5 +1,7 @@
-(setq load-path
- (cons "/var/lib/myfrdcsa/codebases/minor/sigmakee-mode" load-path))
+(let ((dir "/var/lib/myfrdcsa/codebases/minor/sigmakee-mode"))
+ (if (file-exists-p dir)
+  (setq load-path
+   (cons dir load-path))))
 
 (add-to-list 'auto-mode-alist '("\\.kif\\'" . sigmakee-mode))
 
