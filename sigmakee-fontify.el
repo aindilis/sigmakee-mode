@@ -114,7 +114,7 @@
 (defvar sigmakee-font-lock-keywords
   (let ()
     (list 
-(list 
+     (list 
       (concat "^\s*[^;][^\n\r]*\\b\\(" (join "\\|" sigmakee-mode-functions-non-relational-instances-and-classes) "\\)\\b"
 	      )
       '(1 sigmakee-function-nri-and-class-face t)
@@ -125,7 +125,7 @@
       '(1 sigmakee-function-nri-and-class-face t)
       )
      (list 
-      (concat "\\(\\?[A-Z0-9]+\\)\\b"
+      (concat "\\(\\?[A-Z0-9-_]+\\)\\b"
 	      )
       '(1 sigmakee-variable-face t)
       )

@@ -14,6 +14,8 @@
 \\{sigmakee-mode-map}"
  (setq case-fold-search nil)
  (define-key sigmakee-mode-map [tab] 'sigmakee-mode-complete)
+ (define-key sigmakee-mode-map "\C-csl" 'sigmakee-mode-load-assertion-into-stack)
+ (define-key sigmakee-mode-map "\C-csL" 'sigmakee-mode-print-assertion-from-stack)
  ;; (suppress-keymap sigmakee-mode-map)
 
  (make-local-variable 'font-lock-defaults)
