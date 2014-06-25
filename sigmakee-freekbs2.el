@@ -49,7 +49,7 @@ strings (compatible with FreeKBS) to emacs symbols and strings"
   ((symbolp formula)
    formula)))
 
-(defun sigmakee-convert-from-read-dequestionedmarked-string-to-original-string (formula)
+(defun sigmakee-convert-from-read-dequestionmarked-string-to-original-string (formula)
  "Convert from emacs strings and strings containing
 strings (compatible with FreeKBS) to emacs symbols and strings"
  (interactive)
@@ -60,7 +60,7 @@ strings (compatible with FreeKBS) to emacs symbols and strings"
    (concat "(" 
     (join " "
      (mapcar (lambda (subformula)
-	      (sigmakee-convert-from-read-dequestionedmarked-string-to-original-string
+	      (sigmakee-convert-from-read-dequestionmarked-string-to-original-string
 		     subformula)
 	      ;; (see subformula)
 	      ;; (see (concat "hey: " 
@@ -85,7 +85,7 @@ strings (compatible with FreeKBS) to emacs symbols and strings"
 	  freekbs2-stack))
 	(original-string 
 	 (progn (see read-dequestionmarked-string)
-	  (sigmakee-convert-from-read-dequestionedmarked-string-to-original-string
+	  (sigmakee-convert-from-read-dequestionmarked-string-to-original-string
 	  read-dequestionmarked-string))))
   (see original-string)))
 
@@ -93,5 +93,5 @@ strings (compatible with FreeKBS) to emacs symbols and strings"
 
 ;; (sigmakee-mode-print-assertion-from-stack)
 
-;; (sigmakee-convert-from-read-dequestionedmarked-string-to-original-string 
+;; (sigmakee-convert-from-read-dequestionmarked-string-to-original-string 
 ;;  (read "(kif test var-X)"))

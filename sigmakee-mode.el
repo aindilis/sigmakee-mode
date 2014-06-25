@@ -7,6 +7,8 @@
 
 (require 'sigmakee-terms)
 (require 'sigmakee-fontify)
+(if (functionp 'freekbs2-view-stack)
+ (require 'sigmakee-freekbs2))
 
 (define-derived-mode sigmakee-mode
  emacs-lisp-mode "SigmaKEE"
