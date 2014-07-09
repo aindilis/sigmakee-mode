@@ -120,7 +120,8 @@
      ;;  "^[^;]*\\(;.*\\)$" '(1 sigmakee-comment-face nil))
 
      (list 
-      (concat "^\s*[^;][^\n\r]*[\s\n\r(]\\b\\(and\\|or\\|not\\|exists\\|forall\\)\\b"
+      ;; (concat "^\s*[^;][^\n\r]*[\s\n\r(]\\b\\(and\\|or\\|not\\|exists\\|forall\\)\\b"
+      (concat "\\b\\(and\\|or\\|not\\|exists\\|forall\\)\\b"
 	      )
       '(1 sigmakee-logical-operator-face nil)
       )
@@ -159,8 +160,8 @@
      	      sigmakee-relation-face nil) )
 
      (list 
-      (concat "^\s*[^;][^\n\r]*[\s\n\r(]\\(=>\\|<=>\\)"
-     	      )
+      ;; (concat "^\s*[^;][^\n\r]*[\s\n\r(]\\(=>\\|<=>\\)"
+      (concat "\\(=>\\|<=>\\)")
       '(1 sigmakee-logical-operator-face nil)
       )
 
