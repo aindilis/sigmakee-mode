@@ -111,54 +111,63 @@
 ;;;================================================================
 ;;; these are the regexp matches for highlighting SigmaKEE 
 
+(defvar sigmakee-font-lock-prefix "\\b")
 (defvar sigmakee-font-lock-keywords
   (let ()
     (list 
-     (list 
-      (concat "^\s*[^;][^\n\r]*\\b\\(" (join "\\|" sigmakee-mode-functions-non-relational-instances-and-classes) "\\)\\b"
-	      )
-      '(1 sigmakee-function-nri-and-class-face t)
-      )
-     (list 
-      (concat "^\s*[^;][^\n\r]*\\b\\([a-zA-Z0-9-_]+Fn\\)\\b"
-       )
-      '(1 sigmakee-function-nri-and-class-face t)
-      )
-     (list 
-      (concat "\\(\\?[A-Z0-9-_]+\\)\\b"
-	      )
-      '(1 sigmakee-variable-face t)
-      )
-     (list 
-      (concat "\\(\\&\\%[A-Za-z0-9-_]+\\)\\b"
-	      )
-      '(1 sigmakee-other-face t)
-      )
-     (list 
-      (concat "^\s*[^;][^\n\r]*\\b\\(" (join "\\|" sigmakee-mode-relations) "\\)\\b"
-     	      )
-      '(1 sigmakee-relation-face t)
-      )
+
+     ;; (list
+     ;;  "^[^;]*\\(;.*\\)$" '(1 sigmakee-comment-face nil))
+
      (list 
       (concat "^\s*[^;][^\n\r]*[\s\n\r(]\\b\\(and\\|or\\|not\\|exists\\|forall\\)\\b"
 	      )
-      '(1 sigmakee-logical-operator-face t)
+      '(1 sigmakee-logical-operator-face nil)
       )
+     
+     (list 
+      (concat sigmakee-font-lock-prefix "\\(" (join "\\|"
+	      sigmakee-mode-main-relation ) "\\)\\b" ) '(1
+	      sigmakee-main-relation-face nil) )
+
+     (list
+      (concat sigmakee-font-lock-prefix "\\(" 
+       (join "\\|"
+	sigmakee-mode-functions-non-relational-instances-and-classes) "\\)\\b")
+      '(1 sigmakee-function-nri-and-class-face nil))
+
+     (list 
+      (concat
+       sigmakee-font-lock-prefix "\\([a-zA-Z0-9_-]+Fn\\)\\b" )
+       '(1 sigmakee-function-nri-and-class-face nil) )
+
+     (list 
+      (concat "\\(\\?[A-Z0-9_-]+\\)\\b"
+	      )
+      '(1 sigmakee-variable-face nil)
+      )
+
+     (list 
+      (concat "\\(\\&\\%[A-Za-z0-9-_]+\\)\\b"
+	      )
+      '(1 sigmakee-other-face nil)
+      )
+
+     (list 
+      (concat sigmakee-font-lock-prefix "\\(" (join "\\|"
+     	      sigmakee-mode-relations) "\\)\\b" ) '(1
+     	      sigmakee-relation-face nil) )
+
      (list 
       (concat "^\s*[^;][^\n\r]*[\s\n\r(]\\(=>\\|<=>\\)"
      	      )
-      '(1 sigmakee-logical-operator-face t)
+      '(1 sigmakee-logical-operator-face nil)
       )
+
      (list 
-      (concat "^\s*[^;][^\n\r]*\\b\\(" (join "\\|" sigmakee-mode-main-keyword ) "\\)\\b"
-	      )
-      '(1 sigmakee-main-keyword-face t)
-      )
-     (list 
-      (concat "^\s*[^;][^\n\r]*\\b\\(" (join "\\|" sigmakee-mode-main-relation ) "\\)\\b"
-	      )
-      '(1 sigmakee-main-relation-face t)
-      )
+      (concat sigmakee-font-lock-prefix "\\(" (join "\\|"
+	      sigmakee-mode-main-keyword ) "\\)\\b" ) '(1
+	      sigmakee-main-keyword-face nil) )
      
      ;; black for the def parts of PROPERTY DEFINITION
      ;; and of TransitiveProperty UnambiguousProperty UniqueProperty

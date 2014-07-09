@@ -7,7 +7,7 @@
 
 (require 'sigmakee-terms)
 (require 'sigmakee-fontify)
-(if (functionp 'freekbs2-view-stack)
+(if (featurep 'freekbs2)
  (require 'sigmakee-freekbs2))
 
 (define-derived-mode sigmakee-mode
@@ -23,7 +23,7 @@
  (make-local-variable 'font-lock-defaults)
  (setq font-lock-defaults '(sigmakee-font-lock-keywords nil nil))
  (re-font-lock)
- )
+ )o
 
 (defun sigmakee-mode-complete (&optional predicate)
  "Perform completion on SigmaKEE symbol preceding point.
