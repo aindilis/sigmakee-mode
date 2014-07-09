@@ -138,17 +138,17 @@
 
      (list 
       (concat
-       sigmakee-font-lock-prefix "\\([a-zA-Z0-9_-]+Fn\\)\\b" )
+       sigmakee-font-lock-prefix "\\([_a-zA-Z0-9-]+Fn\\)\\b" )
        '(1 sigmakee-function-nri-and-class-face nil) )
 
      (list 
-      (concat "\\(\\?[A-Z0-9_-]+\\)\\b"
+      (concat "\\(\\?[_A-Z0-9-]+\\)\\b"
 	      )
       '(1 sigmakee-variable-face nil)
       )
 
      (list 
-      (concat "\\(\\&\\%[A-Za-z0-9-_]+\\)\\b"
+      (concat "\\(\\&\\%[_A-Za-z0-9-]+\\)\\b"
 	      )
       '(1 sigmakee-other-face nil)
       )
