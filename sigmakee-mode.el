@@ -5,6 +5,7 @@
 
 (add-to-list 'auto-mode-alist '("\\.kif\\'" . sigmakee-mode))
 
+(require 'sigmakee-util)
 (require 'sigmakee-terms)
 (require 'sigmakee-fontify)
 (if (featurep 'freekbs2)
