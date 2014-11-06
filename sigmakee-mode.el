@@ -16,15 +16,24 @@
  "Major mode for Sigma Knowledge Engineering Environment.
 \\{sigmakee-mode-map}"
  (setq case-fold-search nil)
- (define-key sigmakee-mode-map [tab] 'sigmakee-mode-complete)
+ (define-key sigmakee-mode-map (kbd "TAB") 'sigmakee-mode-complete-or-tab)
  (define-key sigmakee-mode-map "\C-csl" 'sigmakee-mode-load-assertion-into-stack)
  (define-key sigmakee-mode-map "\C-csL" 'sigmakee-mode-print-assertion-from-stack)
+
  ;; (suppress-keymap sigmakee-mode-map)
 
  (make-local-variable 'font-lock-defaults)
  (setq font-lock-defaults '(sigmakee-font-lock-keywords nil nil))
  (re-font-lock)
  )
+
+(defun sigmakee-mode-complete-or-tab ()
+ ""
+ (interactive)
+ (unwind-protect
+  (condition-case nil
+   (sigmakee-mode-complete))
+  (insert "	")))
 
 (defun sigmakee-mode-complete (&optional predicate)
  "Perform completion on SigmaKEE symbol preceding point.
@@ -63,8 +72,7 @@ considered."
 	(completion (try-completion pattern completions)))
   (cond ((eq completion t))
    ((null completion)
-    (message "Can't find completion for \"%s\"" pattern)
-    (ding))
+    (error "Can't find completion for \"%s\"" pattern))
    ((not (string= pattern completion))
     (delete-region beg end)
     (insert completion))

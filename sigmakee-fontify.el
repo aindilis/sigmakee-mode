@@ -143,7 +143,7 @@
        '(1 sigmakee-function-nri-and-class-face nil) )
 
      (list 
-      (concat "\\(\\?[_A-Z0-9-]+\\)\\b"
+      (concat "\\(\\?[_A-Za-z0-9-]+\\)\\b"
 	      )
       '(1 sigmakee-variable-face nil)
       )
