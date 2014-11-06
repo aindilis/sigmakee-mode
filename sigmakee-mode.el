@@ -27,13 +27,13 @@
  (re-font-lock)
  )
 
-(defun sigmakee-mode-complete-or-tab ()
+(defun sigmakee-mode-complete-or-tab (&optional arg)
  ""
- (interactive)
+ (interactive "P")
  (unwind-protect
   (condition-case nil
    (sigmakee-mode-complete))
-  (insert "	")))
+  (indent-for-tab-command arg)))
 
 (defun sigmakee-mode-complete (&optional predicate)
  "Perform completion on SigmaKEE symbol preceding point.
@@ -72,7 +72,9 @@ considered."
 	(completion (try-completion pattern completions)))
   (cond ((eq completion t))
    ((null completion)
-    (error "Can't find completion for \"%s\"" pattern))
+    (error)
+    ;; (error "Can't find completion for \"%s\"" pattern)
+    )
    ((not (string= pattern completion))
     (delete-region beg end)
     (insert completion))

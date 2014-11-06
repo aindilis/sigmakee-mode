@@ -95,6 +95,8 @@
 length of all railway routes in the &%GeographicArea ?AREA 
 is the &%LengthMeasure ?LENGTH.")
 
+
+
 (<=>
   (totalLengthOfRailwaySystem ?AREA ?LENGTH)
   (length
